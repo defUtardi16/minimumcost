@@ -3,43 +3,44 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1.0">
-<title>MCF Solver — Catering Bandung | RADSTRIX</title>
+<title>MCF Catering Bandung — RADSTRIX</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600;700&family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
 <style>
-:root{--bg:#f5f5f5;--bg2:#ebebeb;--bg3:#e0e0e0;--bg4:#d5d5d5;--card:rgba(255,255,255,.45);--card2:#fafafa;--border:#d0d0d0;--border2:#c0c0c0;--text:#1a1a1a;--text2:#4a4a4a;--text3:#888;--accent:#333;--accent2:#111;--accent-bg:#e8e8e8;--green:#2e7d32;--red:#c62828;--amber:#f57f17;--blue:#1565c0;--green-bg:rgba(46,125,50,.08);--red-bg:rgba(198,40,40,.08);--amber-bg:rgba(245,127,23,.08);--blue-bg:rgba(21,101,192,.08);--highlight:#333;--highlight-soft:rgba(0,0,0,.06);--radius:10px;--radius-sm:6px;--shadow:0 1px 3px rgba(0,0,0,.06);--shadow-md:0 4px 12px rgba(0,0,0,.08);--shadow-lg:0 8px 30px rgba(0,0,0,.12);--canvas-bg:#fafafa;--canvas-dot:#e0e0e0;--node-fill:#fff;--node-stroke:#333;--edge-color:#bbb;--plexus-dot:rgba(0,0,0,.18);--plexus-line:rgba(0,0,0,.06);--glass-bg:rgba(255,255,255,.45);--glass-border:rgba(255,255,255,.2);--glass-shadow:0 8px 32px rgba(0,0,0,.08);--purple:#7b1fa2;--purple-bg:rgba(123,31,162,.08);--icon-color:#555}
-[data-theme="dark"]{--bg:#0f0f0f;--bg2:#181818;--bg3:#222;--bg4:#2a2a2a;--card:rgba(22,22,22,.65);--card2:#1a1a1a;--border:#2a2a2a;--border2:#333;--text:#e8e8e8;--text2:#aaa;--text3:#666;--accent:#e0e0e0;--accent2:#fff;--accent-bg:#1a1a1a;--green:#4caf50;--red:#ef5350;--amber:#ffb300;--blue:#42a5f5;--green-bg:rgba(76,175,80,.1);--red-bg:rgba(239,83,80,.1);--amber-bg:rgba(255,179,0,.1);--blue-bg:rgba(66,165,245,.1);--highlight:#fff;--highlight-soft:rgba(255,255,255,.04);--radius:10px;--radius-sm:6px;--shadow:0 1px 3px rgba(0,0,0,.3);--shadow-md:0 4px 12px rgba(0,0,0,.4);--shadow-lg:0 8px 30px rgba(0,0,0,.5);--canvas-bg:#141414;--canvas-dot:#222;--node-fill:#1a1a1a;--node-stroke:#e0e0e0;--edge-color:#444;--plexus-dot:rgba(255,255,255,.15);--plexus-line:rgba(255,255,255,.04);--glass-bg:rgba(22,22,22,.65);--glass-border:rgba(255,255,255,.06);--glass-shadow:0 8px 32px rgba(0,0,0,.4);--purple:#ce93d8;--purple-bg:rgba(206,147,216,.1);--icon-color:#aaa}
+:root{--bg:#f5f5f5;--bg2:#ebebeb;--bg3:#e0e0e0;--bg4:#d5d5d5;--card:rgba(255,255,255,.45);--card2:#fafafa;--border:#d0d0d0;--border2:#c0c0c0;--text:#1a1a1a;--text2:#4a4a4a;--text3:#888;--accent:#333;--accent2:#111;--accent-bg:#e8e8e8;--green:#2e7d32;--red:#c62828;--amber:#f57f17;--blue:#1565c0;--green-bg:rgba(46,125,50,.08);--red-bg:rgba(198,40,40,.08);--amber-bg:rgba(245,127,23,.08);--blue-bg:rgba(21,101,192,.08);--purple:#7b1fa2;--purple-bg:rgba(123,31,162,.08);--highlight:#333;--highlight-soft:rgba(0,0,0,.06);--radius:10px;--radius-sm:6px;--shadow:0 1px 3px rgba(0,0,0,.06);--shadow-lg:0 8px 30px rgba(0,0,0,.12);--canvas-bg:#fafafa;--node-fill:#fff;--node-stroke:#333;--edge-color:#bbb;--plexus-dot:rgba(0,0,0,.18);--plexus-line:rgba(0,0,0,.06);--glass-bg:rgba(255,255,255,.45);--glass-border:rgba(255,255,255,.2);--glass-shadow:0 8px 32px rgba(0,0,0,.08)}
+[data-theme="dark"]{--bg:#0f0f0f;--bg2:#181818;--bg3:#222;--bg4:#2a2a2a;--card:rgba(22,22,22,.65);--card2:#1a1a1a;--border:#2a2a2a;--border2:#333;--text:#e8e8e8;--text2:#aaa;--text3:#666;--accent:#e0e0e0;--accent2:#fff;--accent-bg:#1a1a1a;--green:#4caf50;--red:#ef5350;--amber:#ffb300;--blue:#42a5f5;--green-bg:rgba(76,175,80,.1);--red-bg:rgba(239,83,80,.1);--amber-bg:rgba(255,179,0,.1);--blue-bg:rgba(66,165,245,.1);--purple:#ce93d8;--purple-bg:rgba(206,147,216,.1);--highlight:#fff;--highlight-soft:rgba(255,255,255,.04);--radius:10px;--radius-sm:6px;--shadow:0 1px 3px rgba(0,0,0,.3);--shadow-lg:0 8px 30px rgba(0,0,0,.5);--canvas-bg:#141414;--node-fill:#1a1a1a;--node-stroke:#e0e0e0;--edge-color:#444;--plexus-dot:rgba(255,255,255,.15);--plexus-line:rgba(255,255,255,.04);--glass-bg:rgba(22,22,22,.65);--glass-border:rgba(255,255,255,.06);--glass-shadow:0 8px 32px rgba(0,0,0,.4)}
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
-html{scroll-behavior:smooth}
 body{font-family:'DM Sans',sans-serif;background:var(--bg);color:var(--text);line-height:1.6;overflow-x:hidden;min-height:100vh}
-::-webkit-scrollbar{width:5px}::-webkit-scrollbar-track{background:transparent}::-webkit-scrollbar-thumb{background:var(--border2);border-radius:9px}
+::-webkit-scrollbar{width:5px}::-webkit-scrollbar-thumb{background:var(--border2);border-radius:9px}
 canvas#plexusBg{position:fixed;top:0;left:0;width:100%;height:100%;z-index:0;pointer-events:none}
 .shell{max-width:1100px;margin:0 auto;padding:0 20px;position:relative;z-index:1}
-.watermark{position:fixed;bottom:12px;right:18px;font-family:'JetBrains Mono',monospace;font-size:10px;color:var(--text3);opacity:.35;z-index:2;letter-spacing:2px;pointer-events:none}
-.online-indicator{position:fixed;top:14px;left:16px;z-index:100;display:flex;align-items:center;gap:6px;font-size:11px;color:var(--text3);font-family:'JetBrains Mono',monospace}
-.online-indicator::before{content:'';width:6px;height:6px;background:var(--green);border-radius:50%;animation:onlinePulse 2s infinite}
-@keyframes onlinePulse{0%,100%{opacity:1}50%{opacity:.3}}
+.wm{position:fixed;bottom:12px;right:18px;font-family:'JetBrains Mono',monospace;font-size:10px;color:var(--text3);opacity:.35;z-index:2;letter-spacing:2px;pointer-events:none}
+.oi{position:fixed;top:14px;left:16px;z-index:100;display:flex;align-items:center;gap:6px;font-size:11px;color:var(--text3);font-family:'JetBrains Mono',monospace}
+.oi::before{content:'';width:6px;height:6px;background:var(--green);border-radius:50%;animation:op 2s infinite}
+@keyframes op{0%,100%{opacity:1}50%{opacity:.3}}
 .top-bar{position:sticky;top:0;z-index:50;background:var(--glass-bg);backdrop-filter:blur(20px) saturate(180%);border-bottom:1px solid var(--glass-border);padding:10px 0;margin-bottom:30px}
 .top-bar-inner{display:flex;justify-content:space-between;align-items:center;max-width:1100px;margin:0 auto;padding:0 20px}
-.top-bar-logo{font-weight:700;font-size:14px;letter-spacing:-.3px;color:var(--text)}
+.top-bar-logo{font-weight:700;font-size:14px;letter-spacing:-.3px}
 .top-bar-right{display:flex;gap:6px;align-items:center}
 .tb{background:var(--accent-bg);border:1px solid var(--border);color:var(--text);font-size:11px;padding:5px 12px;border-radius:var(--radius-sm);cursor:pointer;font-family:'DM Sans',sans-serif;font-weight:500;transition:all .2s}
 .tb:hover{background:var(--bg3);border-color:var(--border2)}
 .hero{text-align:center;padding:40px 0 30px}
 .hero-sub{font-size:11px;text-transform:uppercase;letter-spacing:3px;color:var(--text3);margin-bottom:8px;font-weight:500}
-.hero-title{font-size:clamp(24px,5vw,38px);font-weight:800;letter-spacing:-1px;color:var(--text);line-height:1.15}
-.hero-desc{font-size:13px;color:var(--text3);margin-top:8px;max-width:600px;margin-left:auto;margin-right:auto}
+.hero-title{font-size:clamp(22px,5vw,36px);font-weight:800;letter-spacing:-1px;line-height:1.15}
+.hero-desc{font-size:13px;color:var(--text3);margin-top:8px;max-width:620px;margin-left:auto;margin-right:auto}
 .section{background:var(--glass-bg);backdrop-filter:blur(16px) saturate(180%);border:1px solid var(--glass-border);border-radius:var(--radius);padding:24px;margin-bottom:20px;box-shadow:var(--glass-shadow);position:relative}
 .section::before{content:'';position:absolute;top:0;left:0;right:0;height:1px;background:linear-gradient(90deg,transparent,rgba(255,255,255,.3),transparent)}
-.s-title{font-size:13px;font-weight:700;text-transform:uppercase;letter-spacing:1.5px;color:var(--text);margin-bottom:16px;display:flex;align-items:center;gap:8px}
+.s-title{font-size:13px;font-weight:700;text-transform:uppercase;letter-spacing:1.5px;margin-bottom:16px;display:flex;align-items:center;gap:8px}
 .s-title::before{content:'';width:3px;height:14px;background:var(--accent);border-radius:2px}
 .badge{display:inline-block;font-size:10px;font-weight:600;padding:2px 8px;border-radius:4px;font-family:'JetBrains Mono',monospace;letter-spacing:.5px}
 .badge-g{background:var(--green-bg);color:var(--green)}.badge-r{background:var(--red-bg);color:var(--red)}.badge-b{background:var(--blue-bg);color:var(--blue)}.badge-a{background:var(--amber-bg);color:var(--amber)}.badge-p{background:var(--purple-bg);color:var(--purple)}
-input[type="text"],input[type="number"],select{font-family:'JetBrains Mono',monospace;font-size:12px;padding:7px 10px;border:1px solid var(--border);border-radius:var(--radius-sm);background:var(--card2);color:var(--text);outline:none;transition:border-color .2s;width:100%}
-input:focus,select:focus{border-color:var(--accent)}
+input[type="text"],input[type="number"],select,textarea{font-family:'JetBrains Mono',monospace;font-size:12px;padding:7px 10px;border:1px solid var(--border);border-radius:var(--radius-sm);background:var(--card2);color:var(--text);outline:none;transition:border-color .2s;width:100%}
+input:focus,select:focus,textarea:focus{border-color:var(--accent)}
+textarea{font-size:11px;resize:vertical;min-height:40px}
 .btn{font-family:'DM Sans',sans-serif;font-weight:600;font-size:12px;padding:8px 20px;border-radius:var(--radius-sm);border:1px solid var(--border);cursor:pointer;transition:all .2s;display:inline-flex;align-items:center;gap:6px}
 .btn-p{background:var(--accent);color:#fff;border-color:var(--accent)}.btn-p:hover{background:var(--accent2)}
 .btn-s{background:var(--card2);color:var(--text)}.btn-s:hover{background:var(--bg3)}
+.btn-d{background:linear-gradient(135deg,var(--green),var(--blue));color:#fff;border:none}.btn-d:hover{opacity:.9}
 .btn-sm{padding:5px 12px;font-size:11px}
 .btn:disabled{opacity:.4;cursor:not-allowed}
 .fg{display:flex;gap:10px;flex-wrap:wrap;align-items:flex-end}
@@ -60,134 +61,198 @@ input:focus,select:focus{border-color:var(--accent)}
 .iter-controls button:disabled{opacity:.3;cursor:not-allowed}
 .iter-badge{font-family:'JetBrains Mono',monospace;font-size:11px;color:var(--text2);padding:4px 10px;background:var(--accent-bg);border-radius:var(--radius-sm);font-weight:600}
 .play-ctrl{display:flex;gap:6px;align-items:center;justify-content:center;margin:8px 0}
-.speed-sel{font-size:11px;padding:4px 8px}
-.iter-detail{background:var(--highlight-soft);border:1px solid var(--border);border-radius:var(--radius-sm);padding:12px;margin:10px 0;font-size:12px;display:none}
-.iter-detail.show{display:block}
+.iter-detail{background:var(--highlight-soft);border:1px solid var(--border);border-radius:var(--radius-sm);padding:14px;margin:10px 0;font-size:12px}
 .iter-changes{margin:8px 0;font-size:12px;color:var(--text2)}
 .iter-changes li{margin:3px 0;padding-left:12px;position:relative;list-style:none}
 .iter-changes li::before{content:'';position:absolute;left:0;top:7px;width:4px;height:4px;background:var(--accent);border-radius:50%}
-.stat-row{display:grid;grid-template-columns:repeat(auto-fit,minmax(130px,1fr));gap:10px;margin-bottom:16px}
+.stat-row{display:grid;grid-template-columns:repeat(auto-fit,minmax(120px,1fr));gap:10px;margin-bottom:16px}
 .stat-card{background:var(--highlight-soft);border:1px solid var(--border);border-radius:var(--radius-sm);padding:12px;text-align:center}
-.stat-card .sv{font-family:'JetBrains Mono',monospace;font-size:18px;font-weight:700;color:var(--text)}
+.stat-card .sv{font-family:'JetBrains Mono',monospace;font-size:18px;font-weight:700}
 .stat-card .sl{font-size:10px;color:var(--text3);text-transform:uppercase;letter-spacing:1px;margin-top:2px}
-.stat-card.winner{border-color:var(--green);background:var(--green-bg)}
-.tabs{display:flex;gap:0;border-bottom:1px solid var(--border);margin-bottom:16px}
+.stat-card.hi{border-color:var(--green);background:var(--green-bg)}
+.tabs{display:flex;gap:0;border-bottom:1px solid var(--border);margin-bottom:16px;flex-wrap:wrap}
 .tabs button{font-family:'DM Sans',sans-serif;font-size:12px;font-weight:600;padding:8px 16px;border:none;background:none;color:var(--text3);cursor:pointer;border-bottom:2px solid transparent;transition:all .2s}
 .tabs button:hover{color:var(--text)}
 .tabs button.on{color:var(--text);border-bottom-color:var(--accent)}
 .tp{display:none}.tp.on{display:block}
 .rt{width:100%;border-collapse:collapse;font-size:12px;margin:10px 0}
 .rt th{background:var(--accent-bg);font-weight:600;text-transform:uppercase;font-size:10px;letter-spacing:.5px;padding:8px 10px;text-align:left;border-bottom:2px solid var(--border);color:var(--text2)}
-.rt td{padding:7px 10px;border-bottom:1px solid var(--border);font-family:'JetBrains Mono',monospace;font-size:11px;color:var(--text)}
+.rt td{padding:7px 10px;border-bottom:1px solid var(--border);font-family:'JetBrains Mono',monospace;font-size:11px}
 .rt tr:hover td{background:var(--highlight-soft)}
-.ai-box{background:var(--highlight-soft);border:1px solid var(--border);border-radius:var(--radius-sm);padding:16px;margin:10px 0;font-size:12px;line-height:1.8;color:var(--text2)}
-.ai-box h4{font-size:12px;font-weight:700;color:var(--text);margin:12px 0 4px;text-transform:uppercase;letter-spacing:.5px}
+.ab{background:var(--highlight-soft);border:1px solid var(--border);border-radius:var(--radius-sm);padding:16px;margin:10px 0;font-size:12px;line-height:1.8;color:var(--text2)}
+.ab h4{font-size:12px;font-weight:700;color:var(--text);margin:12px 0 4px;text-transform:uppercase;letter-spacing:.5px}
 .toast{position:fixed;top:16px;right:16px;z-index:200;padding:10px 18px;border-radius:var(--radius-sm);font-size:12px;font-weight:600;transform:translateX(140%);transition:transform .3s;font-family:'DM Sans',sans-serif}
 .toast.show{transform:translateX(0)}
 .toast-s{background:var(--green);color:#fff}.toast-e{background:var(--red);color:#fff}.toast-i{background:var(--accent);color:#fff}
-.winner-banner{background:linear-gradient(135deg,var(--green-bg),var(--blue-bg));border:2px solid var(--green);border-radius:var(--radius);padding:16px;margin:16px 0;text-align:center}
-.winner-banner h3{font-size:16px;font-weight:800;color:var(--green);margin-bottom:4px;display:flex;align-items:center;justify-content:center;gap:8px}
-.winner-banner p{font-size:12px;color:var(--text2)}
+.wb{background:linear-gradient(135deg,var(--green-bg),var(--blue-bg));border:2px solid var(--green);border-radius:var(--radius);padding:16px;margin:16px 0;text-align:center}
+.wb h3{font-size:16px;font-weight:800;color:var(--green);margin-bottom:4px;display:flex;align-items:center;justify-content:center;gap:8px}
+.wb p{font-size:12px;color:var(--text2)}
 .ico{display:inline-flex;align-items:center;justify-content:center;vertical-align:middle;flex-shrink:0}
 .ico svg{width:14px;height:14px;fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
 .ico-sm svg{width:11px;height:11px}
 .ico-lg svg{width:18px;height:18px}
-.graph-legend{display:flex;gap:16px;flex-wrap:wrap;margin:8px 0;padding:8px 12px;background:var(--highlight-soft);border:1px solid var(--border);border-radius:var(--radius-sm);font-size:10px;color:var(--text2);font-family:'JetBrains Mono',monospace;align-items:center}
-.graph-legend-item{display:flex;align-items:center;gap:5px}
-.nim-display{display:grid;grid-template-columns:auto auto auto auto;gap:0;border:1px solid var(--border);border-radius:var(--radius-sm);overflow:hidden;margin:10px 0;font-size:11px}
-.nim-display .nim-cell{padding:6px 12px;border-bottom:1px solid var(--border);border-right:1px solid var(--border);font-family:'JetBrains Mono',monospace}
-.nim-display .nim-cell:nth-child(4n){border-right:none}
-.nim-display .nim-cell.nim-h{font-weight:700;background:var(--accent-bg);font-family:'DM Sans',sans-serif;text-transform:uppercase;font-size:10px;letter-spacing:.5px;color:var(--text2)}
-.constraint-box{background:var(--amber-bg);border:1px solid var(--amber);border-radius:var(--radius-sm);padding:12px;margin:10px 0;font-size:12px;color:var(--text)}
-.formula-box{background:var(--highlight-soft);border:1px solid var(--border);border-radius:var(--radius-sm);padding:16px;margin:10px 0;font-family:'JetBrains Mono',monospace;font-size:12px;line-height:2;overflow-x:auto;white-space:pre-wrap}
-@media(max-width:768px){.shell{padding:0 12px}.section{padding:16px}.hero{padding:24px 0 18px}.stat-row{grid-template-columns:1fr 1fr}.nim-display{grid-template-columns:auto auto auto auto;font-size:9px}}
-</style>
-</head>
-<body>
-<div id="splashScreen"><canvas id="splashCanvas"></canvas><div class="splash-content" style="position:relative;z-index:1;text-align:center;color:#fff"><h1 style="font-family:Inter,sans-serif;font-size:clamp(28px,6vw,48px);font-weight:900;letter-spacing:-2px;animation:sFU .8s ease both;animation-delay:.3s;opacity:0">RADSTRIX</h1><p style="font-size:13px;color:rgba(255,255,255,.5);margin-top:6px;animation:sFU .8s ease both;animation-delay:.6s;opacity:0;font-family:'JetBrains Mono',monospace">Minimum Cost Flow Solver</p><div style="width:180px;height:2px;background:rgba(255,255,255,.1);border-radius:2px;margin:20px auto 0;overflow:hidden;animation:sFU .8s ease both;animation-delay:.8s;opacity:0"><div style="height:100%;background:#fff;border-radius:2px;animation:sBF 2.5s ease both;animation-delay:1s"></div></div><div style="margin-top:30px;animation:sFU .8s ease both;animation-delay:1.2s;opacity:0" id="splashMenu"><button onclick="launchApp()" style="font-family:'DM Sans',sans-serif;font-weight:700;font-size:13px;padding:10px 28px;border-radius:var(--radius-sm);border:1px solid rgba(255,255,255,.15);background:rgba(255,255,255,.05);color:#fff;cursor:pointer;transition:all .3s;backdrop-filter:blur(8px)">Mulai Solver</button></div></div></div>
-<style>
+.g-legend{display:flex;gap:14px;flex-wrap:wrap;margin:8px 0;padding:8px 12px;background:var(--highlight-soft);border:1px solid var(--border);border-radius:var(--radius-sm);font-size:10px;color:var(--text2);font-family:'JetBrains Mono',monospace;align-items:center}
+.g-legend-item{display:flex;align-items:center;gap:5px}
+.g-legend-dot{width:8px;height:8px;border-radius:50%;display:inline-block}
+.nim-grid{display:grid;grid-template-columns:60px 60px 120px 1fr;gap:0;border:1px solid var(--border);border-radius:var(--radius-sm);overflow:hidden;margin:10px 0;font-size:11px}
+.nim-grid .nc{padding:6px 10px;border-bottom:1px solid var(--border);border-right:1px solid var(--border);font-family:'JetBrains Mono',monospace}
+.nim-grid .nc:nth-child(4n){border-right:none}
+.nim-grid .nh{font-weight:700;background:var(--accent-bg);font-family:'DM Sans',sans-serif;text-transform:uppercase;font-size:10px;letter-spacing:.5px;color:var(--text2)}
+.loc-cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:8px;margin-top:10px}
+.loc-card{background:var(--highlight-soft);border:1px solid var(--border);border-radius:var(--radius-sm);padding:10px}
+.loc-card .lc-label{font-family:'JetBrains Mono',monospace;font-size:10px;color:var(--text3)}
+.loc-card .lc-name{font-weight:700;font-size:13px;margin:2px 0}
+.loc-card .lc-type{font-size:11px;font-weight:600}
+.cbox{background:var(--amber-bg);border:1px solid var(--amber);border-radius:var(--radius-sm);padding:12px;margin:10px 0;font-size:12px}
+.fbox{background:var(--highlight-soft);border:1px solid var(--border);border-radius:var(--radius-sm);padding:16px;margin:10px 0;font-family:'JetBrains Mono',monospace;font-size:12px;line-height:2;overflow-x:auto;white-space:pre-wrap}
+.cost-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px}
+.cost-card{background:var(--highlight-soft);border:1px solid var(--border);border-radius:var(--radius-sm);padding:14px}
+.cost-card h5{font-size:12px;font-weight:700;margin-bottom:8px;display:flex;align-items:center;gap:6px}
+.cost-card .cc-info{font-size:10px;color:var(--text3);margin-bottom:6px}
+.cost-card .cc-result{font-family:'JetBrains Mono',monospace;font-size:12px;font-weight:600;color:var(--green);margin-top:4px;min-height:18px}
+@media(max-width:768px){.shell{padding:0 12px}.section{padding:16px}.hero{padding:24px 0 18px}.stat-row{grid-template-columns:1fr 1fr}.nim-grid{font-size:9px}.cost-grid{grid-template-columns:1fr}}
 #splashScreen{position:fixed;inset:0;z-index:9999;background:#0a0a0a;display:flex;align-items:center;justify-content:center;flex-direction:column;transition:opacity .8s,visibility .8s}
 #splashScreen.hidden{opacity:0;visibility:hidden}
 #splashScreen canvas{position:absolute;inset:0;z-index:0}
-@keyframes sFU{from{opacity:0;transform:translateY(16px)}to{opacity:1;transform:translateY(0)}}
-@keyframes sBF{from{width:0}to{width:100%}}
+.sp-c{position:relative;z-index:1;text-align:center;color:#fff}
+.sp-c h1{font-family:'Inter',sans-serif;font-size:clamp(28px,6vw,48px);font-weight:900;letter-spacing:-2px;animation:sfu .8s ease both;animation-delay:.3s;opacity:0}
+.sp-c p{font-size:13px;color:rgba(255,255,255,.5);margin-top:6px;animation:sfu .8s ease both;animation-delay:.6s;opacity:0;font-family:'JetBrains Mono',monospace}
+.sp-bar{width:180px;height:2px;background:rgba(255,255,255,.1);border-radius:2px;margin:20px auto 0;overflow:hidden;animation:sfu .8s ease both;animation-delay:.8s;opacity:0}
+.sp-bar-i{height:100%;background:#fff;border-radius:2px;animation:sbf 2.5s ease both;animation-delay:1s}
+.sp-menu{margin-top:30px;animation:sfu .8s ease both;animation-delay:1.2s;opacity:0}
+.sp-menu button{font-family:'DM Sans',sans-serif;font-weight:700;font-size:13px;padding:10px 28px;border-radius:var(--radius-sm);border:1px solid rgba(255,255,255,.15);background:rgba(255,255,255,.05);color:#fff;cursor:pointer;transition:all .3s;backdrop-filter:blur(8px)}
+.sp-menu button:hover{background:rgba(255,255,255,.15);border-color:rgba(255,255,255,.3)}
+@keyframes sfu{from{opacity:0;transform:translateY(16px)}to{opacity:1;transform:translateY(0)}}
+@keyframes sbf{from{width:0}to{width:100%}}
 </style>
+</head>
+<body>
+
+<!-- SPLASH SCREEN -->
+<div id="splashScreen">
+<canvas id="splashCanvas"></canvas>
+<div class="sp-c">
+<h1>RADSTRIX</h1>
+<p>Minimum Cost Flow — Catering Bandung</p>
+<div class="sp-bar"><div class="sp-bar-i"></div></div>
+<div class="sp-menu" id="splashMenu"><button onclick="launchApp()">Mulai</button></div>
+</div>
+</div>
+
 <canvas id="plexusBg"></canvas>
-<div class="online-indicator" id="onlineInd">1 online</div>
-<div class="watermark">RADSTRIX</div>
+<div class="oi" id="onlineInd">1 online</div>
+<div class="wm">RADSTRIX</div>
 <div class="toast" id="toast"></div>
 
 <div id="mainApp" style="display:none">
-<div class="top-bar"><div class="top-bar-inner"><div class="top-bar-logo">MCF Solver — Catering Bandung</div><div class="top-bar-right"><button class="tb" onclick="toggleDark()" id="darkBtn">Dark</button><button class="tb" onclick="exportJSON()">Export</button><button class="tb" onclick="window.print()">Print</button></div></div></div>
+
+<!-- TOP BAR -->
+<div class="top-bar"><div class="top-bar-inner">
+<div class="top-bar-logo">MCF Solver — Catering Bandung</div>
+<div class="top-bar-right">
+<button class="tb" onclick="toggleDark()" id="darkBtn">Dark</button>
+<button class="tb" onclick="exportPDF()">PDF</button>
+<button class="tb" onclick="window.print()">Print</button>
+</div>
+</div></div>
 
 <div class="shell">
-<div class="hero"><div class="hero-sub">Penelitian Operasional 2 — Masalah Jaringan (Bagian 3)</div><div class="hero-title">Minimum Cost Flow Solver</div><div class="hero-desc">Usaha Catering Bandung — Meminimumkan biaya pengiriman porsi makan siang dari dapur ke kantor menggunakan Network Simplex Method</div></div>
 
-<!-- SECTION 1: INPUT DATA -->
-<div class="section" id="secInput">
+<!-- HERO -->
+<div class="hero">
+<div class="hero-sub">BAK2NAB3 — Penelitian Operasional 2 — Masalah Jaringan (Bagian 3)</div>
+<div class="hero-title">Minimum Cost Flow Solver</div>
+<div class="hero-desc">Usaha Catering Bandung — Meminimumkan biaya pengiriman porsi makan siang dari dapur ke kantor melalui jaringan distribusi</div>
+</div>
+
+<!-- SEC 1: INPUT MAHASISWA -->
+<div class="section" id="sec1">
 <div class="s-title">Input Data Mahasiswa</div>
 <div class="fg" style="margin-bottom:14px">
-<div class="fc" style="flex:1;min-width:200px"><label>Nama</label><input type="text" id="inpNama" placeholder="Nama lengkap"></div>
+<div class="fc" style="flex:1;min-width:200px"><label>Nama Lengkap</label><input type="text" id="inpNama" placeholder="Nama lengkap"></div>
 <div class="fc" style="flex:1;min-width:200px"><label>NIM</label><input type="text" id="inpNIM" placeholder="Masukkan NIM lengkap" oninput="parseNIM()"></div>
-<div class="fc" style="flex:1;min-width:140px"><label>Kelas</label><input type="text" id="inpKelas" placeholder="TI-07-XX"></div>
+<div class="fc" style="flex:1;min-width:140px"><label>Kelas</label><input type="text" id="inpKelas" placeholder="BS1TI48REG01"></div>
 </div>
 <div class="fg" style="margin-bottom:14px">
-<div class="fc"><label>Kampus</label><select id="inpKampus" onchange="parseNIM()"><option value="bandung22">Bandung (s/d 2022)</option><option value="bandung23">Bandung (2023)</option><option value="surabaya23" selected>Surabaya (s/d 2023)</option><option value="purwokerto21">Purwokerto (s/d 2021)</option><option value="purwokerto2223">Purwokerto (2022-2023)</option></select></div>
+<div class="fc"><label>Kampus & Angkatan</label>
+<select id="inpKampus" onchange="parseNIM()">
+<option value="bandung22">Bandung (s/d 2022)</option>
+<option value="bandung23">Bandung (2023)</option>
+<option value="surabaya23" selected>Surabaya (s/d 2023)</option>
+<option value="purwokerto21">Purwokerto (s/d 2021)</option>
+<option value="purwokerto2223">Purwokerto (2022-2023)</option>
+</select></div>
 </div>
 <div id="nimResult" style="display:none"></div>
 </div>
 
-<!-- SECTION 2: COST INPUT -->
-<div class="section" id="secCost" style="display:none">
-<div class="s-title">Data Biaya Pengiriman per Porsi</div>
-<div style="font-size:12px;color:var(--text2);margin-bottom:12px">Biaya = Rp 100 × jarak tempuh (km). Masukkan jarak dari Google Maps untuk setiap jalur.</div>
-<div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:10px" id="costInputs"></div>
-<div class="constraint-box" style="margin-top:14px">
-<strong>Constraint:</strong> Kapasitas jalur A→B (U<sub>AB</sub>) = 20 porsi. Jalur lainnya tidak dibatasi (∞).
+<!-- SEC 2: INPUT JARAK & BIAYA (CLO 2a) -->
+<div class="section" id="sec2" style="display:none">
+<div class="s-title">Data Jarak & Biaya Pengiriman (CLO 2a)</div>
+<div style="font-size:12px;color:var(--text2);margin-bottom:6px">Masukkan <strong>jarak tempuh (km)</strong> dari Google Maps untuk setiap jalur. Biaya otomatis dihitung: <strong>Rp 100 × jarak (km)</strong>.</div>
+<div style="font-size:11px;color:var(--text3);margin-bottom:14px">Gunakan Google Maps: pilih moda mobil, atur "depart at" sekitar waktu makan siang pada hari kerja.</div>
+<div class="cost-grid" id="costGrid"></div>
+<div class="cbox" style="margin-top:14px">
+<strong>Constraint Kapasitas:</strong> Jumlah porsi dari Dapur A ke Dapur B (U<sub>AB</sub>) ≤ 20 porsi. Jalur lainnya tidak dibatasi (∞).
 </div>
-<div style="margin-top:14px;display:flex;gap:8px;flex-wrap:wrap">
-<button class="btn btn-p" onclick="buildModel()">Bangun Model & Solve</button>
+<div style="margin-top:16px;display:flex;gap:8px;flex-wrap:wrap">
+<button class="btn btn-p" onclick="generateAll()">Generate Formulasi & Model Jaringan</button>
+<button class="btn btn-d" onclick="solveAndShow()">Solve (Network Simplex)</button>
 <button class="btn btn-s" onclick="resetAll()">Reset</button>
 </div>
 </div>
 
-<!-- SECTION 3: MODEL -->
-<div class="section" id="secModel" style="display:none">
-<div class="s-title">Model Minimum Cost Flow</div>
-<div class="tabs"><button class="on" onclick="sTab('formulation',this)">Formulasi</button><button onclick="sTab('network',this)">Model Jaringan</button><button onclick="sTab('mathmodel',this)">Model Matematis</button></div>
-<div class="tp on" id="tp-formulation"><div id="formulationContent"></div></div>
-<div class="tp" id="tp-network">
-<div class="layout-btns"><button class="on" onclick="setLayout('circle',this)">Circle</button><button onclick="setLayout('custom',this)">Custom</button><button onclick="setLayout('force',this)">Force</button></div>
-<div id="graphLegend" class="graph-legend"></div>
-<div class="cv-wrap"><canvas id="cv" width="800" height="500"></canvas><div class="zoom-ctrl"><button onclick="zoomIn()">+</button><button onclick="zoomOut()">-</button><button onclick="zoomReset()">R</button></div></div>
+<!-- SEC 3: CLO 1 — DEFINISI & NOTASI -->
+<div class="section" id="sec3" style="display:none">
+<div class="s-title">CLO 1 — Definisi Elemen & Notasi Matematis</div>
+<div class="tabs" id="tabs3">
+<button class="on" onclick="sTab('clo1t1',this)">Tahap 1: Definisi</button>
+<button onclick="sTab('clo1t2',this)">Tahap 2: Notasi Matematis</button>
 </div>
-<div class="tp" id="tp-mathmodel"><div id="mathContent"></div></div>
+<div class="tp on" id="tp-clo1t1"><div id="clo1t1Content"></div></div>
+<div class="tp" id="tp-clo1t2"><div id="clo1t2Content"></div></div>
 </div>
 
-<!-- SECTION 4: ITERATIONS -->
-<div class="section" id="secIter" style="display:none">
-<div class="s-title">Network Simplex — Iterasi</div>
-<div class="iter-controls" id="iterCtrl"><button onclick="iterGo(0)" id="iterFirst">|&lt;</button><button onclick="iterGo(curIter-1)" id="iterPrev">&lt;</button><span class="iter-badge" id="iterBadge">0/0</span><button onclick="iterGo(curIter+1)" id="iterNext">&gt;</button><button onclick="iterGo(iterStates.length-1)" id="iterLast">&gt;|</button></div>
-<div class="play-ctrl" id="playCtrl"><button class="btn btn-sm btn-s" id="playBtn" onclick="togglePlayback()">Play</button><select class="speed-sel" onchange="playSpeed=+this.value"><option value="2000">0.5x</option><option value="1200" selected>1x</option><option value="700">2x</option><option value="350">4x</option></select></div>
-<div class="iter-detail show" id="iterDetail"></div>
+<!-- SEC 4: CLO 2 — BIAYA TABLE & MODEL JARINGAN -->
+<div class="section" id="sec4" style="display:none">
+<div class="s-title">CLO 2 — Biaya per Porsi & Model Jaringan</div>
+<div class="tabs" id="tabs4">
+<button class="on" onclick="sTab('clo2cost',this)">Tabel Biaya (CLO 2a)</button>
+<button onclick="sTab('clo2net',this)">Model Jaringan (CLO 2b)</button>
+<button onclick="sTab('clo2math',this)">Model Matematis (Bonus)</button>
+</div>
+<div class="tp on" id="tp-clo2cost"><div id="clo2costContent"></div></div>
+<div class="tp" id="tp-clo2net">
+<div class="layout-btns"><button class="on" onclick="setLayout('mcf',this)">MCF Layout</button><button onclick="setLayout('circle',this)">Circle</button><button onclick="setLayout('force',this)">Force</button></div>
+<div id="gLegend" class="g-legend"></div>
+<div class="cv-wrap"><canvas id="cv" width="800" height="520"></canvas><div class="zoom-ctrl"><button onclick="zoomIn()">+</button><button onclick="zoomOut()">-</button><button onclick="zoomReset()">R</button></div></div>
+</div>
+<div class="tp" id="tp-clo2math"><div id="clo2mathContent"></div></div>
+</div>
+
+<!-- SEC 5: SOLVER (BONUS) -->
+<div class="section" id="sec5" style="display:none">
+<div class="s-title">Network Simplex — Solusi Optimal (Bonus)</div>
+<div class="iter-controls" id="iterCtrl">
+<button onclick="iterGo(0)" id="iterFirst">|&lt;</button>
+<button onclick="iterGo(curIter-1)" id="iterPrev">&lt;</button>
+<span class="iter-badge" id="iterBadge">0/0</span>
+<button onclick="iterGo(curIter+1)" id="iterNext">&gt;</button>
+<button onclick="iterGo(iterStates.length-1)" id="iterLast">&gt;|</button>
+</div>
+<div class="play-ctrl"><button class="btn btn-sm btn-s" id="playBtn" onclick="togglePlay()">Play</button><select class="btn btn-sm btn-s" onchange="playSpd=+this.value"><option value="2000">0.5x</option><option value="1200" selected>1x</option><option value="600">2x</option></select></div>
+<div class="iter-detail" id="iterDetail"></div>
 <ul class="iter-changes" id="iterChanges"></ul>
+<div id="solBanner"></div>
+<div class="stat-row" id="solStats"></div>
+<div id="solTable"></div>
 </div>
 
-<!-- SECTION 5: RESULTS -->
-<div class="section" id="secResults" style="display:none">
-<div class="s-title">Solusi Optimal</div>
-<div id="winnerBanner"></div>
-<div class="stat-row" id="statsRow"></div>
-<div class="tabs"><button class="on" onclick="sTab('solTable',this)">Tabel Solusi</button><button onclick="sTab('iterAll',this)">Semua Iterasi</button><button onclick="sTab('analysis',this)">Analisis</button></div>
-<div class="tp on" id="tp-solTable"><div id="solTableWrap"></div></div>
-<div class="tp" id="tp-iterAll"><div id="allIterWrap"></div></div>
-<div class="tp" id="tp-analysis"><div class="ai-box" id="analysisBox"></div></div>
-</div>
-
-</div></div>
+</div><!-- shell -->
+</div><!-- mainApp -->
 
 <script>
-// ============ ICONS (SVG) ============
+/* ===== ICONS (SVG only, no emoji) ===== */
 var ICO={
 trophy:'<svg viewBox="0 0 24 24"><path d="M6 9H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h2M18 9h2a2 2 0 0 0 2-2V5a2 2 0 0 0-2-2h-2M4 22h16M10 22V16M14 22V16"/><path d="M6 2h12v7a6 6 0 0 1-12 0V2z"/></svg>',
 clock:'<svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>',
@@ -198,725 +263,591 @@ check:'<svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>',
 flag:'<svg viewBox="0 0 24 24"><path d="M4 15s1-1 4-1 5 2 8 2 4-1 4-1V3s-1 1-4 1-5-2-8-2-4 1-4 1z"/><line x1="4" y1="22" x2="4" y2="15"/></svg>',
 coin:'<svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><line x1="12" y1="6" x2="12" y2="18"/><path d="M9 10h4.5a1.5 1.5 0 0 1 0 3H9"/></svg>',
 map:'<svg viewBox="0 0 24 24"><polygon points="1 6 1 22 8 18 16 22 23 18 23 2 16 6 8 2 1 6"/><line x1="8" y1="2" x2="8" y2="18"/><line x1="16" y1="6" x2="16" y2="22"/></svg>',
-activity:'<svg viewBox="0 0 24 24"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>',
-sparkle:'<svg viewBox="0 0 24 24"><path d="M12 2l2.4 7.2L22 12l-7.6 2.8L12 22l-2.4-7.2L2 12l7.6-2.8L12 2z"/></svg>'
+sparkle:'<svg viewBox="0 0 24 24"><path d="M12 2l2.4 7.2L22 12l-7.6 2.8L12 22l-2.4-7.2L2 12l7.6-2.8L12 2z"/></svg>',
+truck:'<svg viewBox="0 0 24 24"><rect x="1" y="3" width="15" height="13"/><polygon points="16 8 20 8 23 11 23 16 16 16 16 8"/><circle cx="5.5" cy="18.5" r="2.5"/><circle cx="18.5" cy="18.5" r="2.5"/></svg>',
+building:'<svg viewBox="0 0 24 24"><rect x="4" y="2" width="16" height="20" rx="2"/><line x1="9" y1="6" x2="9" y2="6.01"/><line x1="15" y1="6" x2="15" y2="6.01"/><line x1="9" y1="10" x2="9" y2="10.01"/><line x1="15" y1="10" x2="15" y2="10.01"/><line x1="9" y1="14" x2="9" y2="14.01"/><line x1="15" y1="14" x2="15" y2="14.01"/><line x1="9" y1="18" x2="15" y2="18"/></svg>',
+home:'<svg viewBox="0 0 24 24"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>',
+box:'<svg viewBox="0 0 24 24"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/><polyline points="3.27 6.96 12 12.01 20.73 6.96"/><line x1="12" y1="22.08" x2="12" y2="12"/></svg>'
 };
-function ico(name,size){var cls='ico'+(size==='sm'?' ico-sm':size==='lg'?' ico-lg':'');return'<span class="'+cls+'">'+ICO[name]+'</span>'}
+function ico(n,s){return'<span class="ico'+(s==='sm'?' ico-sm':s==='lg'?' ico-lg':'')+'">'+ICO[n]+'</span>'}
 
-// ============ LOCATION DATABASE ============
-var LOC_DB={
+/* ===== LOC DATABASE ===== */
+var LOC={
 A:['Perumahan Permata Buah Batu','Harmony Park Ciwastra','Buana Ciwastra Residence','Pesona Bali Residence','Perumahan Cherry Field','Mustika Hegar Regency','Cluster Batu Karang','Kinagara Regency 2','Perumahan Aster Village',"D'Amerta Residence"],
 B:['Jl. Gading Utama Barat','Jl. Sanggar Kencana Utama','Jl. Mars Utara','Jl. Aria Timur','Jl. Merkuri Utara','Jl. Kawaluyaan Raya','Jl. Aria Barat','Jl. Rancabolang','Jl. Venus Raya','Jl. Aria Utama'],
-D:['Wisma HSBC','Grha Indosurya','Wisma Bumiputera','Wisma CIMB Niaga','Kantor Pikiran Rakyat','PT PLN Disjabar','Dinas Perindag Jabar','Gedung Keuangan Negara','Menara BRI','Wisma Monex'],
-E:['PT Krom Bank Indonesia Tbk','Asuransi Astra (Garda Oto)','Bank Danamon KC Juanda','Kantor Regional 2 Jabar OJK','Bank MNC International','Bank QNB Indonesia Dago','BCA Finance','Bukalapak R&D Office','Bank CIMB Niaga Dago','Commonwealth Bank']
+D:['Wisma HSBC','Grha Indosurya','Wisma Bumiputera','Wisma CIMB Niaga','Kantor Pikiran Rakyat','PT PLN (Persero) – Kantor Distribusi Jawa Barat (Disjabar)','Dinas Perindustrian dan Perdagangan Provinsi Jawa Barat','Gedung Keuangan Negara','Menara BRI','Wisma Monex'],
+E:['PT Krom Bank Indonesia Tbk Bandung','Asuransi Astra (Garda Oto) - Cabang Bandung','Bank Danamon - KC Bandung Juanda','Kantor Regional 2 Jawa Barat OJK','Bank MNC International','Bank QNB Indonesia Bandung Dago','BCA Finance','Bukalapak Research & Development Office','Bank CIMB Niaga - Dago','Commonwealth Bank']
 };
-var LOC_C='Gedung Satrio Seskoad';
+var LOC_C='Gedung Satrio Seskoad, Bandung';
 
-// ============ GLOBALS ============
-var isDark=false,sc=1,di=-1,dOff={x:0,y:0},cLo='circle',curIter=0,iterStates=[],playInterval=null,playSpeed=1200;
-var locA='',locB='',locD='',locE='',nimDigits='';
-var arcs=[],costs={},sol=null;
-var pos=[];var NODE_R=22;
-var nodeNames=['A','B','C','D','E'];
-var cvEl,ctx;
+/* ===== GLOBALS ===== */
+var isDark=false,sc=1,di=-1,dOff={x:0,y:0},cLo='mcf';
+var curIter=0,iterStates=[],playInt=null,playSpd=1200;
+var locA='',locB='',locD='',locE='';
+var ARCS=[
+{id:'AB',from:'A',to:'B',cap:20},
+{id:'AC',from:'A',to:'C',cap:Infinity},
+{id:'AD',from:'A',to:'D',cap:Infinity},
+{id:'BC',from:'B',to:'C',cap:Infinity},
+{id:'CE',from:'C',to:'E',cap:Infinity},
+{id:'DE',from:'D',to:'E',cap:Infinity},
+{id:'ED',from:'E',to:'D',cap:Infinity}
+];
+var NODES=[
+{id:'A',bi:110,type:'supply'},
+{id:'B',bi:90,type:'supply'},
+{id:'C',bi:0,type:'transit'},
+{id:'D',bi:-80,type:'demand'},
+{id:'E',bi:-120,type:'demand'}
+];
+var costs={},dists={},sol=null;
+var pos=[],NODE_R=24,cvEl,ctx;
 
-// ============ SPLASH ============
+/* ===== SPLASH ===== */
 (function(){
 var c=document.getElementById('splashCanvas'),x=c.getContext('2d'),pts=[];
 function rz(){c.width=innerWidth;c.height=innerHeight}rz();addEventListener('resize',rz);
-var np=Math.max(60,Math.floor(innerWidth*innerHeight/8000));
-for(var i=0;i<np;i++)pts.push({x:Math.random()*c.width,y:Math.random()*c.height,vx:(Math.random()-.5)*.4,vy:(Math.random()-.5)*.4,r:Math.random()*1.2+.3,br:Math.random()*.5+.5});
-function draw(){x.clearRect(0,0,c.width,c.height);for(var i=0;i<pts.length;i++){var a=pts[i];a.x+=a.vx;a.y+=a.vy;if(a.x<0||a.x>c.width)a.vx*=-1;if(a.y<0||a.y>c.height)a.vy*=-1;for(var j=i+1;j<pts.length;j++){var b=pts[j],dx=a.x-b.x,dy=a.y-b.y,d=Math.sqrt(dx*dx+dy*dy);if(d<120){x.beginPath();x.moveTo(a.x,a.y);x.lineTo(b.x,b.y);x.strokeStyle='rgba(255,255,255,'+(1-d/120)*.12+')';x.lineWidth=.5;x.stroke()}}x.beginPath();x.arc(a.x,a.y,a.r*.4,0,Math.PI*2);x.fillStyle='rgba(255,255,255,'+a.br*.8+')';x.fill()}requestAnimationFrame(draw)}draw();
-setTimeout(function(){document.getElementById('splashMenu').style.pointerEvents='auto';document.getElementById('splashMenu').style.opacity='1'},3200);
+for(var i=0;i<70;i++)pts.push({x:Math.random()*c.width,y:Math.random()*c.height,vx:(Math.random()-.5)*.4,vy:(Math.random()-.5)*.4,r:Math.random()*1.2+.3,b:Math.random()*.5+.5});
+function draw(){x.clearRect(0,0,c.width,c.height);for(var i=0;i<pts.length;i++){var a=pts[i];a.x+=a.vx;a.y+=a.vy;if(a.x<0||a.x>c.width)a.vx*=-1;if(a.y<0||a.y>c.height)a.vy*=-1;for(var j=i+1;j<pts.length;j++){var b2=pts[j],dx=a.x-b2.x,dy=a.y-b2.y,d=Math.sqrt(dx*dx+dy*dy);if(d<120){x.beginPath();x.moveTo(a.x,a.y);x.lineTo(b2.x,b2.y);x.strokeStyle='rgba(255,255,255,'+(1-d/120)*.12+')';x.lineWidth=.5;x.stroke()}}x.beginPath();x.arc(a.x,a.y,a.r*.4,0,Math.PI*2);x.fillStyle='rgba(255,255,255,'+a.b*.8+')';x.fill()}requestAnimationFrame(draw)}draw();
+setTimeout(function(){var m=document.getElementById('splashMenu');m.style.pointerEvents='auto';m.style.opacity='1'},3200);
 window.launchApp=function(){var sp=document.getElementById('splashScreen');sp.classList.add('hidden');setTimeout(function(){sp.style.display='none';startApp()},900)};
 })();
 
-// ============ PLEXUS BG ============
-function initPlexus(){var c=document.getElementById('plexusBg'),x=c.getContext('2d'),pts=[];function rz(){c.width=innerWidth;c.height=innerHeight}rz();addEventListener('resize',rz);var np=Math.max(50,Math.floor(innerWidth*innerHeight/10000));for(var i=0;i<np;i++)pts.push({x:Math.random()*c.width,y:Math.random()*c.height,vx:(Math.random()-.5)*.3,vy:(Math.random()-.5)*.3,r:Math.random()*1+.3});function draw(){var cs=getComputedStyle(document.documentElement),dc=cs.getPropertyValue('--plexus-dot').trim()||'rgba(0,0,0,.18)',lc=cs.getPropertyValue('--plexus-line').trim()||'rgba(0,0,0,.06)';x.clearRect(0,0,c.width,c.height);for(var i=0;i<pts.length;i++){var a=pts[i];a.x+=a.vx;a.y+=a.vy;if(a.x<0||a.x>c.width)a.vx*=-1;if(a.y<0||a.y>c.height)a.vy*=-1;for(var j=i+1;j<pts.length;j++){var b=pts[j],dx=a.x-b.x,dy=a.y-b.y,d=Math.sqrt(dx*dx+dy*dy);if(d<140){x.beginPath();x.moveTo(a.x,a.y);x.lineTo(b.x,b.y);x.strokeStyle=lc;x.lineWidth=.5;x.stroke()}}x.beginPath();x.arc(a.x,a.y,a.r*.4,0,Math.PI*2);x.fillStyle=dc;x.fill()}requestAnimationFrame(draw)}draw()}
+/* ===== PLEXUS BG ===== */
+function initPlexus(){var c=document.getElementById('plexusBg'),x=c.getContext('2d'),pts=[];function rz(){c.width=innerWidth;c.height=innerHeight}rz();addEventListener('resize',rz);for(var i=0;i<50;i++)pts.push({x:Math.random()*c.width,y:Math.random()*c.height,vx:(Math.random()-.5)*.3,vy:(Math.random()-.5)*.3,r:Math.random()+.3});function draw(){var cs=getComputedStyle(document.documentElement),dc=cs.getPropertyValue('--plexus-dot').trim(),lc=cs.getPropertyValue('--plexus-line').trim();x.clearRect(0,0,c.width,c.height);for(var i=0;i<pts.length;i++){var a=pts[i];a.x+=a.vx;a.y+=a.vy;if(a.x<0||a.x>c.width)a.vx*=-1;if(a.y<0||a.y>c.height)a.vy*=-1;for(var j=i+1;j<pts.length;j++){var b=pts[j],dx=a.x-b.x,dy=a.y-b.y,d=Math.sqrt(dx*dx+dy*dy);if(d<140){x.beginPath();x.moveTo(a.x,a.y);x.lineTo(b.x,b.y);x.strokeStyle=lc;x.lineWidth=.5;x.stroke()}}x.beginPath();x.arc(a.x,a.y,a.r*.4,0,Math.PI*2);x.fillStyle=dc;x.fill()}requestAnimationFrame(draw)}draw()}
 
-function startApp(){initPlexus();if(localStorage.getItem('mcf-dark')==='1'){isDark=true;document.documentElement.setAttribute('data-theme','dark');document.getElementById('darkBtn').textContent='Light'}document.getElementById('mainApp').style.display='block';initCanvas();initOnline()}
-function initOnline(){var b=3+Math.floor(Math.random()*8);function u(){var v=b+Math.floor(Math.random()*5)-2;if(v<1)v=1;document.getElementById('onlineInd').textContent=v+' online'}u();setInterval(u,8000)}
-function toggleDark(){isDark=!isDark;document.documentElement.setAttribute('data-theme',isDark?'dark':'light');document.getElementById('darkBtn').textContent=isDark?'Light':'Dark';localStorage.setItem('mcf-dark',isDark?'1':'0');drawGraph()}
+function startApp(){initPlexus();if(localStorage.getItem('mcf-dk')==='1'){isDark=true;document.documentElement.setAttribute('data-theme','dark');document.getElementById('darkBtn').textContent='Light'}document.getElementById('mainApp').style.display='block';initCanvas();var b=3+Math.floor(Math.random()*8);setInterval(function(){document.getElementById('onlineInd').textContent=(b+Math.floor(Math.random()*5)-2)+' online'},8000)}
+function toggleDark(){isDark=!isDark;document.documentElement.setAttribute('data-theme',isDark?'dark':'light');document.getElementById('darkBtn').textContent=isDark?'Light':'Dark';localStorage.setItem('mcf-dk',isDark?'1':'0');if(pos.length)drawGraph()}
 function toast(m,t){var el=document.getElementById('toast');el.textContent=m;el.className='toast show '+(t==='success'?'toast-s':t==='error'?'toast-e':'toast-i');setTimeout(function(){el.classList.remove('show')},2500)}
 function sTab(n,b){b.parentElement.querySelectorAll('button').forEach(function(x){x.classList.remove('on')});b.classList.add('on');b.parentElement.parentElement.querySelectorAll('.tp').forEach(function(x){x.classList.remove('on')});document.getElementById('tp-'+n).classList.add('on')}
 
-// ============ NIM PARSER ============
+/* ===== NIM PARSER ===== */
 function parseNIM(){
 var nim=document.getElementById('inpNIM').value.trim();
-if(nim.length<4){document.getElementById('nimResult').style.display='none';document.getElementById('secCost').style.display='none';return}
-var digits=nim.slice(-4);
-if(!/^\d{4}$/.test(digits)){toast('4 digit terakhir NIM harus angka','error');return}
-nimDigits=digits;
-var dA=+digits[0],dB=+digits[1],dD=+digits[2],dE=+digits[3];
-locA=LOC_DB.A[dA]||LOC_DB.A[0];
-locB=LOC_DB.B[dB]||LOC_DB.B[0];
-locD=LOC_DB.D[dD]||LOC_DB.D[0];
-locE=LOC_DB.E[dE]||LOC_DB.E[0];
+if(nim.length<4){document.getElementById('nimResult').style.display='none';document.getElementById('sec2').style.display='none';return}
+var d=nim.slice(-4);
+if(!/^\d{4}$/.test(d)){toast('4 digit terakhir NIM harus angka','error');return}
+var dA=+d[0],dB=+d[1],dD=+d[2],dE=+d[3];
+locA=LOC.A[dA];locB=LOC.B[dB];locD=LOC.D[dD];locE=LOC.E[dE];
 
-var h='<div class="nim-display">';
-h+='<div class="nim-cell nim-h">Digit</div><div class="nim-cell nim-h">Label</div><div class="nim-cell nim-h">Tipe</div><div class="nim-cell nim-h">Lokasi</div>';
-h+='<div class="nim-cell">'+dA+'</div><div class="nim-cell">A</div><div class="nim-cell">Dapur (Supply)</div><div class="nim-cell">'+locA+'</div>';
-h+='<div class="nim-cell">'+dB+'</div><div class="nim-cell">B</div><div class="nim-cell">Dapur (Supply)</div><div class="nim-cell">'+locB+'</div>';
-h+='<div class="nim-cell">-</div><div class="nim-cell">C</div><div class="nim-cell">Transit</div><div class="nim-cell">'+LOC_C+'</div>';
-h+='<div class="nim-cell">'+dD+'</div><div class="nim-cell">D</div><div class="nim-cell">Kantor (Demand)</div><div class="nim-cell">'+locD+'</div>';
-h+='<div class="nim-cell">'+dE+'</div><div class="nim-cell">E</div><div class="nim-cell">Kantor (Demand)</div><div class="nim-cell">'+locE+'</div>';
+var h='<div class="nim-grid">';
+h+='<div class="nc nh">Digit</div><div class="nc nh">Node</div><div class="nc nh">Tipe</div><div class="nc nh">Lokasi</div>';
+h+='<div class="nc">'+dA+'</div><div class="nc">A</div><div class="nc"><span class="badge badge-g">SUPPLY</span></div><div class="nc">'+locA+'</div>';
+h+='<div class="nc">'+dB+'</div><div class="nc">B</div><div class="nc"><span class="badge badge-g">SUPPLY</span></div><div class="nc">'+locB+'</div>';
+h+='<div class="nc">—</div><div class="nc">C</div><div class="nc"><span class="badge badge-a">TRANSIT</span></div><div class="nc">'+LOC_C+'</div>';
+h+='<div class="nc">'+dD+'</div><div class="nc">D</div><div class="nc"><span class="badge badge-r">DEMAND</span></div><div class="nc">'+locD+'</div>';
+h+='<div class="nc">'+dE+'</div><div class="nc">E</div><div class="nc"><span class="badge badge-r">DEMAND</span></div><div class="nc">'+locE+'</div>';
 h+='</div>';
-h+='<div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:8px;margin-top:10px">';
-[{l:'A',n:locA,t:'Supply: 110',c:'var(--green)'},{l:'B',n:locB,t:'Supply: 90',c:'var(--green)'},{l:'C',n:LOC_C,t:'Transit: 0',c:'var(--amber)'},{l:'D',n:locD,t:'Demand: -80',c:'var(--red)'},{l:'E',n:locE,t:'Demand: -120',c:'var(--red)'}].forEach(function(loc){
-h+='<div style="background:var(--highlight-soft);border:1px solid var(--border);border-radius:var(--radius-sm);padding:10px"><div style="font-family:JetBrains Mono;font-size:10px;color:var(--text3)">Node '+loc.l+'</div><div style="font-weight:700;font-size:13px;margin:2px 0">'+loc.n+'</div><div style="font-size:11px;color:'+loc.c+';font-weight:600">'+loc.t+' porsi</div></div>';
-});
+
+// Location cards
+h+='<div class="loc-cards">';
+var locs=[{l:'A',n:locA,bi:'+110',t:'Supply (Dapur)',c:'var(--green)',ico:'home'},{l:'B',n:locB,bi:'+90',t:'Supply (Dapur)',c:'var(--green)',ico:'home'},{l:'C',n:LOC_C,bi:'0',t:'Transshipment',c:'var(--amber)',ico:'box'},{l:'D',n:locD,bi:'-80',t:'Demand (Kantor)',c:'var(--red)',ico:'building'},{l:'E',n:locE,bi:'-120',t:'Demand (Kantor)',c:'var(--red)',ico:'building'}];
+locs.forEach(function(lc){h+='<div class="loc-card"><div class="lc-label">'+ico(lc.ico,'sm')+' Node '+lc.l+'</div><div class="lc-name">'+lc.n+'</div><div class="lc-type" style="color:'+lc.c+'">'+lc.t+' (b<sub>'+lc.l+'</sub> = '+lc.bi+' porsi)</div></div>'});
 h+='</div>';
+
 document.getElementById('nimResult').innerHTML=h;
 document.getElementById('nimResult').style.display='block';
 buildCostInputs();
-document.getElementById('secCost').style.display='block';
-toast('Lokasi terdeteksi dari NIM','success');
+document.getElementById('sec2').style.display='block';
+toast('Lokasi berhasil dideteksi dari NIM','success');
 }
 
-// ============ COST INPUTS ============
-var ARCS_DEF=[
-{from:'A',to:'B',fromN:'locA',toN:'locB'},
-{from:'A',to:'C',fromN:'locA',toN:'LOC_C'},
-{from:'A',to:'D',fromN:'locA',toN:'locD'},
-{from:'B',to:'C',fromN:'locB',toN:'LOC_C'},
-{from:'C',to:'E',fromN:'LOC_C',toN:'locE'},
-{from:'D',to:'E',fromN:'locD',toN:'locE'},
-{from:'E',to:'D',fromN:'locE',toN:'locD'}
-];
-
-function getLocName(key){
-if(key==='locA') return locA;
-if(key==='locB') return locB;
-if(key==='locD') return locD;
-if(key==='locE') return locE;
-if(key==='LOC_C') return LOC_C;
-return key;
-}
-
+/* ===== COST INPUTS ===== */
+function locName(node){return node==='A'?locA:node==='B'?locB:node==='C'?LOC_C:node==='D'?locD:node==='E'?locE:''}
 function buildCostInputs(){
-var el=document.getElementById('costInputs');
-el.innerHTML='';
-ARCS_DEF.forEach(function(arc,i){
-var fn=getLocName(arc.fromN), tn=getLocName(arc.toN);
-var cap=arc.from==='A'&&arc.to==='B'?' (max 20)':'';
-el.innerHTML+='<div class="fc"><label>'+arc.from+'→'+arc.to+cap+'</label><input type="number" id="dist_'+i+'" placeholder="Jarak km" min="0" step="0.01"><div style="font-size:9px;color:var(--text3);margin-top:2px">'+fn+' → '+tn+'</div><div style="font-size:9px;color:var(--blue);font-family:JetBrains Mono" id="cost_'+i+'">Biaya: -</div></div>';
+var g=document.getElementById('costGrid');g.innerHTML='';
+ARCS.forEach(function(arc){
+var fn=locName(arc.from),tn=locName(arc.to);
+var capTxt=arc.cap!==Infinity?' <span class="badge badge-a">max '+arc.cap+'</span>':'';
+g.innerHTML+='<div class="cost-card"><h5>'+ico('route','sm')+' '+arc.from+'→'+arc.to+capTxt+'</h5><div class="cc-info">'+fn+' → '+tn+'</div><div class="fc"><label>Jarak (km)</label><input type="number" id="dist_'+arc.id+'" placeholder="0.00" min="0" step="0.01" oninput="updateCost(\''+arc.id+'\')"></div><div class="cc-result" id="cost_'+arc.id+'">Biaya: —</div></div>';
 });
-// Add event listeners
-setTimeout(function(){
-ARCS_DEF.forEach(function(arc,i){
-document.getElementById('dist_'+i).addEventListener('input',function(){
-var v=parseFloat(this.value);
-var costEl=document.getElementById('cost_'+i);
-if(!isNaN(v)&&v>0){costEl.textContent='Biaya: Rp '+Math.round(v*100).toLocaleString('id')+' /porsi'}
-else{costEl.textContent='Biaya: -'}
-});
-});
-},100);
 }
-
-// ============ BUILD MODEL & SOLVE ============
-function buildModel(){
-// Read costs
-costs={};arcs=[];
-var allFilled=true;
-ARCS_DEF.forEach(function(arc,i){
-var v=parseFloat(document.getElementById('dist_'+i).value);
-if(isNaN(v)||v<=0){allFilled=false}
+function updateCost(id){
+var v=parseFloat(document.getElementById('dist_'+id).value);
+var el=document.getElementById('cost_'+id);
+if(!isNaN(v)&&v>0){
 var c=Math.round(v*100);
-var key=arc.from+arc.to;
-costs[key]=c;
-arcs.push({from:arc.from,to:arc.to,cost:c,cap:arc.from==='A'&&arc.to==='B'?20:Infinity});
-});
-if(!allFilled){toast('Lengkapi semua jarak!','error');return}
-
-// Build formulation
-buildFormulation();
-buildMathModel();
-
-// Setup graph positions
-pos=[
-{x:150,y:100}, // A
-{x:150,y:400}, // B
-{x:400,y:250}, // C
-{x:650,y:100}, // D
-{x:650,y:400}  // E
-];
-
-// Run Network Simplex
-runNetworkSimplex();
-
-document.getElementById('secModel').style.display='block';
-document.getElementById('secIter').style.display='block';
-document.getElementById('secResults').style.display='block';
-drawGraph();
-updateLegend();
-toast('Model dibangun & solusi ditemukan!','success');
-document.getElementById('secModel').scrollIntoView({behavior:'smooth'});
+dists[id]=v;costs[id]=c;
+el.textContent='Biaya: Rp '+c.toLocaleString('id')+',00 / porsi';
+el.style.color='var(--green)';
+}else{
+delete dists[id];delete costs[id];
+el.textContent='Biaya: —';
+el.style.color='var(--text3)';
+}
 }
 
-// ============ FORMULATION ============
-function buildFormulation(){
-var h='<div class="ai-box">';
-h+='<h4>'+ico('target')+' Tahap 1: Definisi Elemen Model</h4>';
-h+='<p><strong>Tujuan:</strong> Meminimumkan total biaya pengiriman porsi makan siang dari dapur ke kantor.</p>';
-h+='<p><strong>Variabel Keputusan:</strong> X<sub>ij</sub> = jumlah porsi yang dialirkan melalui jalur i→j</p>';
-h+='<p><strong>Supply Nodes:</strong></p><ul style="margin-left:18px;list-style:disc"><li>Dapur A (b<sub>A</sub> = 110): '+locA+'</li><li>Dapur B (b<sub>B</sub> = 90): '+locB+'</li></ul>';
-h+='<p><strong>Demand Nodes:</strong></p><ul style="margin-left:18px;list-style:disc"><li>Kantor D (b<sub>D</sub> = -80): '+locD+'</li><li>Kantor E (b<sub>E</sub> = -120): '+locE+'</li></ul>';
-h+='<p><strong>Transshipment Node:</strong></p><ul style="margin-left:18px;list-style:disc"><li>Lokasi C (b<sub>C</sub> = 0): '+LOC_C+'</li></ul>';
-h+='<p><strong>Kapasitas:</strong> U<sub>AB</sub> = 20, sisanya ∞</p>';
+/* ===== GENERATE CLO 1 + CLO 2 ===== */
+function generateAll(){
+// Validate
+var missing=[];
+ARCS.forEach(function(a){if(!costs[a.id])missing.push(a.from+'→'+a.to)});
+if(missing.length){toast('Lengkapi jarak: '+missing.join(', '),'error');return}
 
-h+='<h4>'+ico('coin')+' Tahap 2: Notasi Matematis</h4>';
-h+='<table class="rt"><tr><th>Variabel</th><th>Jalur</th><th>Biaya/porsi</th><th>Kapasitas</th></tr>';
-ARCS_DEF.forEach(function(arc,i){
-var key=arc.from+arc.to;
-var cap=arc.from==='A'&&arc.to==='B'?'20':'∞';
-h+='<tr><td>X<sub>'+arc.from+arc.to+'</sub></td><td>'+getLocName(arc.fromN)+' → '+getLocName(arc.toN)+'</td><td>Rp '+costs[key].toLocaleString('id')+'</td><td>'+cap+'</td></tr>';
-});
+buildCLO1();
+buildCLO2();
+
+// Setup graph
+pos=[{x:120,y:80},{x:120,y:440},{x:400,y:260},{x:680,y:80},{x:680,y:440}];
+drawGraph();updateLegend();
+
+document.getElementById('sec3').style.display='block';
+document.getElementById('sec4').style.display='block';
+toast('Formulasi CLO 1 & CLO 2 berhasil dibuat!','success');
+document.getElementById('sec3').scrollIntoView({behavior:'smooth'});
+}
+
+/* ===== CLO 1: DEFINISI & NOTASI ===== */
+function buildCLO1(){
+// Tahap 1
+var h='<div class="ab">';
+h+='<h4>'+ico('target')+' Tujuan</h4>';
+h+='<p>Meminimumkan total biaya pengiriman porsi makan siang dari dapur ke kantor.</p>';
+h+='<p>Dengan biaya pengiriman per porsi = Rp 100 × jarak tempuh (km) untuk setiap jalur.</p>';
+
+h+='<h4>'+ico('truck')+' Variabel Keputusan</h4>';
+h+='<p>X<sub>ij</sub> = jumlah porsi makan siang yang dialirkan melalui jalur i → j</p>';
+h+='<table class="rt"><tr><th>Variabel</th><th>Jalur</th><th>Keterangan</th></tr>';
+ARCS.forEach(function(a){h+='<tr><td>X<sub>'+a.id+'</sub></td><td>'+a.from+' → '+a.to+'</td><td>'+locName(a.from)+' → '+locName(a.to)+'</td></tr>'});
 h+='</table>';
 
-h+='<table class="rt"><tr><th>Node</th><th>Lokasi</th><th>b<sub>i</sub></th><th>Tipe</th></tr>';
-h+='<tr><td>A</td><td>'+locA+'</td><td style="color:var(--green)">+110</td><td><span class="badge badge-g">SUPPLY</span></td></tr>';
-h+='<tr><td>B</td><td>'+locB+'</td><td style="color:var(--green)">+90</td><td><span class="badge badge-g">SUPPLY</span></td></tr>';
-h+='<tr><td>C</td><td>'+LOC_C+'</td><td>0</td><td><span class="badge badge-a">TRANSIT</span></td></tr>';
-h+='<tr><td>D</td><td>'+locD+'</td><td style="color:var(--red)">-80</td><td><span class="badge badge-r">DEMAND</span></td></tr>';
-h+='<tr><td>E</td><td>'+locE+'</td><td style="color:var(--red)">-120</td><td><span class="badge badge-r">DEMAND</span></td></tr>';
+h+='<h4>'+ico('info')+' Constraint</h4>';
+h+='<ul style="margin-left:18px;list-style:disc">';
+h+='<li>Ketersediaan pasokan pada Dapur A sebesar <strong>110 porsi</strong></li>';
+h+='<li>Ketersediaan pasokan pada Dapur B sebesar <strong>90 porsi</strong></li>';
+h+='<li>Ketersediaan pasokan/demand pada Lokasi Transit C sebesar <strong>0 porsi</strong></li>';
+h+='<li>Demand pada Kantor D sebesar <strong>80 porsi</strong></li>';
+h+='<li>Demand pada Kantor E sebesar <strong>120 porsi</strong></li>';
+h+='<li>Kapasitas aliran pada jalur A→B (U<sub>AB</sub>) ≤ <strong>20 porsi</strong></li>';
+h+='<li>Jalur lainnya tidak memiliki batasan kapasitas (∞)</li>';
+h+='<li>Batasan non-negatif: X<sub>ij</sub> ≥ 0</li>';
+h+='</ul></div>';
+document.getElementById('clo1t1Content').innerHTML=h;
+
+// Tahap 2
+var h2='<div class="ab">';
+h2+='<h4>'+ico('sparkle')+' Variabel Keputusan (X<sub>ij</sub>)</h4>';
+h2+='<table class="rt"><tr><th>Variabel</th><th>Deskripsi</th></tr>';
+ARCS.forEach(function(a){h2+='<tr><td>X<sub>'+a.id+'</sub></td><td>Jumlah porsi makan siang yang dialirkan melalui jalur '+a.from+' → '+a.to+' ('+locName(a.from)+' → '+locName(a.to)+')</td></tr>'});
+h2+='</table>';
+
+h2+='<h4>'+ico('coin')+' Kapasitas Busur (U<sub>ij</sub>)</h4>';
+h2+='<table class="rt"><tr><th>Busur</th><th>Kapasitas</th></tr>';
+ARCS.forEach(function(a){h2+='<tr><td>U<sub>'+a.id+'</sub></td><td>'+(a.cap!==Infinity?a.cap+' porsi':'∞ (tak terbatas)')+'</td></tr>'});
+h2+='</table>';
+
+h2+='<h4>'+ico('building')+' Supply/Demand pada Node (b<sub>i</sub>)</h4>';
+h2+='<table class="rt"><tr><th>Node</th><th>Lokasi</th><th>b<sub>i</sub></th><th>Tipe</th></tr>';
+NODES.forEach(function(n){
+var col=n.bi>0?'var(--green)':n.bi<0?'var(--red)':'var(--amber)';
+var badge=n.type==='supply'?'badge-g':n.type==='demand'?'badge-r':'badge-a';
+h2+='<tr><td>'+n.id+'</td><td>'+locName(n.id)+'</td><td style="color:'+col+';font-weight:700">'+(n.bi>0?'+':'')+n.bi+'</td><td><span class="badge '+badge+'">'+n.type.toUpperCase()+'</span></td></tr>';
+});
+h2+='</table>';
+
+h2+='<h4>'+ico('coin')+' Biaya per Unit Aliran (c<sub>ij</sub>)</h4>';
+h2+='<table class="rt"><tr><th>Jalur</th><th>Jarak (km)</th><th>c<sub>ij</sub> (Rp/porsi)</th></tr>';
+ARCS.forEach(function(a){h2+='<tr><td>'+a.from+' → '+a.to+'</td><td>'+dists[a.id].toFixed(2)+'</td><td>Rp '+costs[a.id].toLocaleString('id')+'</td></tr>'});
+h2+='</table>';
+h2+='</div>';
+document.getElementById('clo1t2Content').innerHTML=h2;
+}
+
+/* ===== CLO 2: COST TABLE + NETWORK ===== */
+function buildCLO2(){
+// CLO 2a: cost table
+var h='<div class="ab">';
+h+='<h4>'+ico('coin')+' Biaya Pengiriman per Porsi</h4>';
+h+='<p>Biaya = Rp 100,00 × jarak tempuh (km)</p>';
+h+='<table class="rt"><tr><th>Jalur</th><th>Dari</th><th>Ke</th><th>Jarak (km)</th><th>Biaya/porsi</th></tr>';
+ARCS.forEach(function(a){
+h+='<tr><td>'+a.from+' → '+a.to+'</td><td>'+locName(a.from)+'</td><td>'+locName(a.to)+'</td><td>'+dists[a.id].toFixed(2)+' km</td><td>Rp '+costs[a.id].toLocaleString('id')+',00</td></tr>';
+});
 h+='</table></div>';
-document.getElementById('formulationContent').innerHTML=h;
+document.getElementById('clo2costContent').innerHTML=h;
+
+// CLO 2b math model (bonus)
+var hm='<div class="fbox">';
+hm+='<strong>Fungsi Tujuan:</strong>\n';
+hm+='Min Z = '+ARCS.map(function(a){return costs[a.id]+'·X<sub>'+a.id+'</sub>'}).join(' + ')+'\n\n';
+hm+='<strong>Constraint (Flow Conservation):</strong>\n';
+hm+='Node A (b=110): X<sub>AB</sub> + X<sub>AC</sub> + X<sub>AD</sub> = 110\n';
+hm+='Node B (b=90): -X<sub>AB</sub> + X<sub>BC</sub> = 90\n';
+hm+='Node C (b=0): -X<sub>AC</sub> - X<sub>BC</sub> + X<sub>CE</sub> = 0\n';
+hm+='Node D (b=-80): -X<sub>AD</sub> + X<sub>DE</sub> - X<sub>ED</sub> = -80\n';
+hm+='Node E (b=-120): -X<sub>CE</sub> - X<sub>DE</sub> + X<sub>ED</sub> = -120\n\n';
+hm+='<strong>Kapasitas & Non-Negatif:</strong>\n';
+hm+='0 ≤ X<sub>AB</sub> ≤ 20\n';
+hm+='X<sub>ij</sub> ≥ 0 untuk semua (i,j)\n';
+hm+='</div>';
+document.getElementById('clo2mathContent').innerHTML=hm;
 }
 
-function buildMathModel(){
-var h='<div class="formula-box">';
-h+='<strong>Fungsi Tujuan:</strong>\n';
-h+='Min Z = ';
-var terms=[];
-ARCS_DEF.forEach(function(arc){var key=arc.from+arc.to;terms.push(costs[key]+'·X<sub>'+key+'</sub>')});
-h+=terms.join(' + ')+'\n\n';
-h+='<strong>Constraint (Flow Conservation):</strong>\n';
-h+='Node A: X<sub>AB</sub> + X<sub>AC</sub> + X<sub>AD</sub> = 110\n';
-h+='Node B: -X<sub>AB</sub> + X<sub>BC</sub> = 90\n';
-h+='Node C: -X<sub>AC</sub> - X<sub>BC</sub> + X<sub>CE</sub> = 0\n';
-h+='Node D: -X<sub>AD</sub> + X<sub>DE</sub> - X<sub>ED</sub> = -80\n';
-h+='Node E: -X<sub>CE</sub> - X<sub>DE</sub> + X<sub>ED</sub> = -120\n\n';
-h+='<strong>Kapasitas & Non-Negatif:</strong>\n';
-h+='X<sub>AB</sub> ≤ 20\n';
-h+='X<sub>ij</sub> ≥ 0 untuk semua (i,j)\n';
-h+='</div>';
-document.getElementById('mathContent').innerHTML=h;
-}
-
-// ============ NETWORK SIMPLEX SOLVER ============
-function runNetworkSimplex(){
-// Problem data
-var supply={A:110,B:90,C:0,D:-80,E:-120};
-var arcList=arcs.map(function(a){return{from:a.from,to:a.to,cost:a.cost,cap:a.cap,flow:0}});
-
+/* ===== NETWORK SIMPLEX SOLVER ===== */
+function solveAndShow(){
+if(!costs['AB']){toast('Generate formulasi dulu!','error');return}
 iterStates=[];
+// Same structure as lecture: supply A=110, B=90, demand D=-80, E=-120, transit C=0
+// Arcs: AB(cap20), AC, AD, BC, CE, DE, ED
+var c=costs;
 
-// We implement a simplified but correct network simplex
-// For this specific problem structure, we can solve it analytically with the upper bound technique
+// Initial BFS: spanning tree = {AD, BC, CE, DE}
+// Non-basis = {AB, AC, ED}
+// Solve: AD=110, BC=90, CE=90, DE=30, AB=0, AC=0, ED=0
+var fl={AB:0,AC:0,AD:110,BC:90,CE:90,DE:30,ED:0};
+var basis=['AD','BC','CE','DE'], nonBasis=['AB','AC','ED'];
 
-// Step 1: Find initial BFS using spanning tree
-// Choose spanning tree: AD, BC, CE, DE (same as lecture example pattern)
-var basis=['AD','BC','CE','DE'];
-var nonBasis=['AB','AC','ED'];
+function Z(f){var z=0;ARCS.forEach(function(a){z+=(f[a.id]||0)*c[a.id]});return z}
 
-// Solve for BFS flows
-// Node A: X_AB + X_AC + X_AD = 110 → X_AD = 110 (AB=0, AC=0)
-// Node B: -X_AB + X_BC = 90 → X_BC = 90
-// Node C: -X_AC - X_BC + X_CE = 0 → X_CE = 90
-// Node D: -X_AD + X_DE - X_ED = -80 → X_DE = 110-80=30
-// Node E: -X_CE - X_DE + X_ED = -120 → check: -90-30=-120 ✓
+iterStates.push({title:'Solusi Basis Layak Awal',desc:'Spanning tree: AD, BC, CE, DE',changes:['Variabel Basis: X_AD='+fl.AD+', X_BC='+fl.BC+', X_CE='+fl.CE+', X_DE='+fl.DE,'Variabel Non Basis: X_AB=0, X_AC=0, X_ED=0','Z = Rp '+Z(fl).toLocaleString('id')],flows:Object.assign({},fl),basis:basis.slice()});
 
-var flows={AB:0,AC:0,AD:110,BC:90,CE:90,DE:30,ED:0};
+// Iteration 1: Check optimality
+// ΔZ for each non-basis
+// AC cycle: AC-CE-(-AD)-(-DE) → cAC+cCE-cDE-cAD
+var dzAC=c.AC+c.CE-c.DE-c.AD;
+// AB(=BA reverse) cycle: (-BA)-AD-DE-(-CE)-(-BC) → -cAB+cAD+cDE-cCE-cBC ... 
+// Actually for AB: cycle AB-BC-CE-(-DE)-(-AD) → need to trace carefully
+// Let me use the lecture pattern: for AB entering, cycle is AB→BC→CE→(−DE)→(−AD)? No...
+// For this network with basis {AD,BC,CE,DE}, adding AB creates cycle:
+// A→B via AB, then B→C via BC, C→...back to A? No direct path.
+// Actually: A→B(AB), need path B→A via basis. B→C(BC), C→E(CE)...no path E→A.
+// Hmm, A→D(AD reverse)→E(DE reverse)→C(CE reverse)→B(BC reverse)
+// So cycle: AB, -(BC), -(CE), DE, AD all reversed? Let me think again.
+// 
+// The basis tree connects all 5 nodes: A-D (AD), D-E (DE), B-C (BC), C-E (CE)
+// Tree edges: A—D, D—E, E—C, C—B
+// Adding AB: creates cycle A—B—C—E—D—A
+// Direction check relative to AB (A→B):
+// AB: + (forward, entering)
+// B→C via BC: + (same direction as BC arc)  
+// C→E via CE: + (same direction)
+// E→D via DE: this is opposite to DE direction, so -(DE)
+// Wait, DE is D→E. Going E→D is opposite. So -DE.
+// D→A via AD: this is opposite to AD direction (A→D). So -AD.
+// ΔZ(AB) = cAB + cBC + cCE - cDE - cAD
+var dzAB_=c.AB+c.BC+c.CE-c.DE-c.AD;
 
-// Check feasibility
-var feasible=true;
-if(flows.AB>20){feasible=false} // cap check
-// All non-negative ✓, CE has no cap constraint in this BFS
-// Check CE<=inf ✓
+// For ED entering, cycle: E→D(ED), D→E via DE but that's same pair
+// Cycle: ED, DE → just the pair. ΔZ = cED + cDE
+var dzED=c.ED+c.DE;
 
-iterStates.push({
-title:'Inisialisasi',
-desc:'Membangun spanning tree awal dan solusi basis layak',
-changes:[
-'Spanning tree: AD, BC, CE, DE (4 arcs = n-1 = 5-1)',
-'Non-basis: AB, AC, ED',
-'Solusi: X_AD=110, X_BC=90, X_CE=90, X_DE=30',
-'X_AB=0, X_AC=0, X_ED=0',
-'Z = '+calcZ(flows)
-],
-flows:Object.assign({},flows),
-basis:basis.slice(),
-nonBasis:nonBasis.slice(),
-hlArcs:basis.map(arcKey2pair),
-bloomArcs:[]
+// For AC entering: A→C(AC), need path C→A via basis
+// Tree: A—D—E—C—B. Path C→A: C→E(CE)→D(reverse DE=E→D means -DE)→A(reverse AD=D→A means -AD)
+// Wait direction: CE is C→E (forward), DE is D→E so E→D is -(DE), AD is A→D so D→A is -(AD)
+// Cycle: AC, CE (forward, so sign depends on cycle direction)
+// Entering AC goes A→C. Path back C→...→A via tree:
+// C—E (via CE: C→E, same direction as cycle flow) → +CE
+// E—D (via DE: D→E, but we go E→D, opposite) → -DE  
+// D—A (via AD: A→D, but we go D→A, opposite) → -AD
+// ΔZ(AC) = cAC + cCE - cDE - cAD
+var dzAC2=c.AC+c.CE-c.DE-c.AD;
+
+iterStates.push({title:'Iterasi 1 — Cek Optimalitas',desc:'Menghitung ΔZ untuk setiap variabel non-basis',changes:[
+'Siklus AB: AB-BC-CE-(-DE)-(-AD)',
+'ΔZ(AB) = '+c.AB+' + '+c.BC+' + '+c.CE+' - '+c.DE+' - '+c.AD+' = '+dzAB_,
+'Siklus AC: AC-CE-(-DE)-(-AD)',
+'ΔZ(AC) = '+c.AC+' + '+c.CE+' - '+c.DE+' - '+c.AD+' = '+dzAC2,
+'Siklus ED: ED-DE',
+'ΔZ(ED) = '+c.ED+' + '+c.DE+' = '+dzED,
+dzAC2<0||dzAB_<0?'Masih ada ΔZ < 0 → belum optimal':'Semua ΔZ ≥ 0 → OPTIMAL'
+],flows:Object.assign({},fl),basis:basis.slice()});
+
+var maxIters=10,iter=0;
+var curFlows=Object.assign({},fl);
+var curBasis=basis.slice(),curNonBasis=nonBasis.slice();
+
+while(iter<maxIters){
+iter++;
+// Compute all deltaZ
+var deltas=[];
+curNonBasis.forEach(function(nb){
+var dz=computeDeltaZ(nb,curBasis,c);
+if(dz!==null)deltas.push({key:nb,dz:dz.val,cycle:dz.cycle});
 });
 
-// Iteration loop
-var maxIter=20,iterCount=0;
-var currentFlows=Object.assign({},flows);
-var currentBasis=basis.slice();
-var currentNonBasis=nonBasis.slice();
-// Track upper bound substitutions
-var reversed={}; // key -> true if reversed
-
-while(iterCount<maxIter){
-iterCount++;
-// Calculate delta Z for each non-basis arc
-var deltaZs=[];
-currentNonBasis.forEach(function(nbKey){
-var cycle=findCycle(nbKey,currentBasis,reversed);
-if(!cycle)return;
-var dz=calcDeltaZ(cycle,currentFlows,reversed);
-deltaZs.push({key:nbKey,dz:dz,cycle:cycle});
-});
-
-// Check optimality
-var entering=null;
-var minDZ=0;
-deltaZs.forEach(function(d){
-if(d.dz<minDZ){minDZ=d.dz;entering=d}
-});
+// Find most negative
+var entering=null,minDz=0;
+deltas.forEach(function(d){if(d.dz<minDz){minDz=d.dz;entering=d}});
 
 if(!entering){
-// Optimal!
-iterStates.push({
-title:'Solusi Optimal Ditemukan!',
-desc:'Semua ΔZ ≥ 0, solusi sudah optimal',
-changes:deltaZs.map(function(d){return 'ΔZ('+d.key+') = '+d.dz}).concat([
-'Semua ΔZ ≥ 0 → OPTIMAL',
-'Z* = '+calcZ(currentFlows)
-]),
-flows:Object.assign({},currentFlows),
-basis:currentBasis.slice(),
-nonBasis:currentNonBasis.slice(),
-hlArcs:currentBasis.map(arcKey2pair),
-bloomArcs:currentBasis.map(arcKey2pair)
-});
+iterStates.push({title:'OPTIMAL — Iterasi '+iter,desc:'Semua ΔZ ≥ 0',changes:deltas.map(function(d){return'ΔZ('+d.key+') = '+d.dz}).concat(['Semua ΔZ ≥ 0 → Solusi OPTIMAL','Z* = Rp '+Z(curFlows).toLocaleString('id')]),flows:Object.assign({},curFlows),basis:curBasis.slice()});
 break;
 }
 
-// Record check step
-iterStates.push({
-title:'Iterasi '+iterCount+' — Cek Optimalitas',
-desc:'Menghitung ΔZ untuk setiap non-basis arc',
-changes:deltaZs.map(function(d){return 'ΔZ('+d.key+') = '+d.dz+(d.key===entering.key?' ← ENTERING':'')}),
-flows:Object.assign({},currentFlows),
-basis:currentBasis.slice(),
-nonBasis:currentNonBasis.slice(),
-hlArcs:currentBasis.map(arcKey2pair),
-bloomArcs:[]
-});
-
-// Find theta and leaving variable
-var enterKey=entering.key;
-var cycle=entering.cycle;
-var theta=Infinity;
-var leavingKey=null;
-var leavingBound='lower'; // 'lower' or 'upper'
-
-// For the entering variable itself
-var enterArc=getArcInfo(enterKey,reversed);
-if(enterArc.cap!==Infinity) theta=Math.min(theta,enterArc.cap);
-
-cycle.forEach(function(ce){
-if(ce.key===enterKey)return;
-var arcInfo=getArcInfo(ce.key,reversed);
-if(ce.dir==='+'){
-// flow increases - check upper bound
-if(arcInfo.cap!==Infinity){
-var room=arcInfo.cap-currentFlows[ce.key];
+// Find theta
+var theta=Infinity,leavingKey=null,leavingBound='lower';
+entering.cycle.forEach(function(ce){
+if(ce.key===entering.key)return;
+if(ce.dir==='-'){
+if(curFlows[ce.key]<theta){theta=curFlows[ce.key];leavingKey=ce.key;leavingBound='lower'}
+}else{
+var arc=ARCS.find(function(a){return a.id===ce.key});
+if(arc&&arc.cap!==Infinity){
+var room=arc.cap-curFlows[ce.key];
 if(room<theta){theta=room;leavingKey=ce.key;leavingBound='upper'}
 }
-} else {
-// flow decreases - check lower bound (0)
-if(currentFlows[ce.key]<theta){theta=currentFlows[ce.key];leavingKey=ce.key;leavingBound='lower'}
 }
 });
+// Check entering arc cap
+var eArc=ARCS.find(function(a){return a.id===entering.key});
+if(eArc&&eArc.cap!==Infinity&&eArc.cap<theta){theta=eArc.cap;leavingKey=entering.key;leavingBound='upper'}
 
-// Also check entering var upper bound
-if(enterArc.cap!==Infinity && enterArc.cap<theta){
-theta=enterArc.cap;leavingKey=enterKey;leavingBound='upper';
-}
-
+if(theta===Infinity||theta===0){
+// Find any basis that would reach 0
+entering.cycle.forEach(function(ce){
+if(ce.key!==entering.key&&ce.dir==='-'&&curFlows[ce.key]===0){leavingKey=ce.key;leavingBound='lower';theta=0}
+});
 if(theta===Infinity)theta=0;
+}
 
 // Update flows
-currentFlows[enterKey]=(currentFlows[enterKey]||0)+theta;
-cycle.forEach(function(ce){
-if(ce.key===enterKey)return;
-if(ce.dir==='+')currentFlows[ce.key]+=theta;
-else currentFlows[ce.key]-=theta;
+curFlows[entering.key]=(curFlows[entering.key]||0)+theta;
+entering.cycle.forEach(function(ce){
+if(ce.key===entering.key)return;
+if(ce.dir==='+')curFlows[ce.key]+=theta;
+else curFlows[ce.key]-=theta;
 });
-
-// Determine leaving variable
-if(!leavingKey){
-// Degenerate - pick any basis var that reached 0
-cycle.forEach(function(ce){
-if(ce.key!==enterKey && currentFlows[ce.key]===0 && currentBasis.indexOf(ce.key)>=0){
-leavingKey=ce.key;leavingBound='lower';
-}
-});
-}
-
-var changes=[
-'Entering: '+enterKey+' (ΔZ = '+minDZ+')',
-'θ = '+theta,
-'Leaving: '+leavingKey+' (reached '+leavingBound+' bound)'
-];
 
 // Swap basis
 if(leavingBound==='lower'){
-// Normal swap
-var li=currentBasis.indexOf(leavingKey);
-if(li>=0)currentBasis.splice(li,1);
-currentBasis.push(enterKey);
-var ei=currentNonBasis.indexOf(enterKey);
-if(ei>=0)currentNonBasis.splice(ei,1);
-currentNonBasis.push(leavingKey);
-changes.push(leavingKey+' keluar (lower bound = 0)');
-} else {
-// Upper bound technique
-var li=currentBasis.indexOf(leavingKey);
-if(li>=0)currentBasis.splice(li,1);
-if(leavingKey!==enterKey)currentBasis.push(enterKey);
-var ei=currentNonBasis.indexOf(enterKey);
-if(ei>=0)currentNonBasis.splice(ei,1);
-if(leavingKey!==enterKey)currentNonBasis.push(leavingKey);
-
-// Reverse the arc
-reversed[leavingKey]=!reversed[leavingKey];
-changes.push(leavingKey+' keluar (upper bound) → reversed');
+var li=curBasis.indexOf(leavingKey);if(li>=0)curBasis.splice(li,1);
+curBasis.push(entering.key);
+var ei=curNonBasis.indexOf(entering.key);if(ei>=0)curNonBasis.splice(ei,1);
+curNonBasis.push(leavingKey);
+}else{
+// Upper bound: reverse arc
+var li=curBasis.indexOf(leavingKey);if(li>=0)curBasis.splice(li,1);
+if(leavingKey!==entering.key)curBasis.push(entering.key);
+var ei=curNonBasis.indexOf(entering.key);if(ei>=0)curNonBasis.splice(ei,1);
+if(leavingKey!==entering.key)curNonBasis.push(leavingKey);
 }
 
-// Show updated flows
-var flowStr=[];
-for(var k in currentFlows){if(currentFlows[k]>0)flowStr.push('X_'+k+'='+currentFlows[k])}
-changes.push('Flows: '+flowStr.join(', '));
-changes.push('Z = '+calcZ(currentFlows));
+var fStr=[];for(var k in curFlows)if(curFlows[k]>0)fStr.push('X_'+k+'='+curFlows[k]);
 
-iterStates.push({
-title:'Iterasi '+iterCount+' — Update',
-desc:'Entering: '+enterKey+', Leaving: '+leavingKey,
-changes:changes,
-flows:Object.assign({},currentFlows),
-basis:currentBasis.slice(),
-nonBasis:currentNonBasis.slice(),
-hlArcs:currentBasis.map(arcKey2pair),
-bloomArcs:[arcKey2pair(enterKey)]
-});
+iterStates.push({title:'Iterasi '+iter+' — Perbaikan Solusi',desc:'Entering: '+entering.key+', Leaving: '+leavingKey+' ('+leavingBound+' bound)',changes:[
+'Entering variable: '+entering.key+' (ΔZ = '+minDz+')',
+'θ = '+theta,
+'Leaving variable: '+leavingKey+' ('+leavingBound+' bound'+(leavingBound==='upper'?', Upper Bound Technique diterapkan':'')+')',
+'Solusi baru: '+fStr.join(', '),
+'Z = Rp '+Z(curFlows).toLocaleString('id')
+],flows:Object.assign({},curFlows),basis:curBasis.slice()});
 }
 
-sol={flows:currentFlows,z:calcZ(currentFlows)};
+sol={flows:curFlows,z:Z(curFlows)};
 curIter=0;
-setupIterCtrl();
-iterGo(0);
-buildResults();
+document.getElementById('sec5').style.display='block';
+setupIterCtrl();iterGo(0);
+buildSolResults();
+toast('Solusi optimal ditemukan!','success');
+document.getElementById('sec5').scrollIntoView({behavior:'smooth'});
 }
 
-function arcKey2pair(key){
-var f=key[0],t=key[1];
-return{from:'ABCDE'.indexOf(f),to:'ABCDE'.indexOf(t)};
-}
-
-function getArcInfo(key,rev){
-var f=key[0],t=key[1];
-var found=null;
-arcs.forEach(function(a){if(a.from===f&&a.to===t)found=a});
-if(found)return{cost:found.cost,cap:found.cap};
-// Check reverse
-arcs.forEach(function(a){if(a.from===t&&a.to===f)found=a});
-if(found)return{cost:-found.cost,cap:found.cap};
-return{cost:0,cap:Infinity};
-}
-
-function calcZ(flows){
-var z=0;
-ARCS_DEF.forEach(function(arc){
-var key=arc.from+arc.to;
-if(flows[key])z+=flows[key]*costs[key];
-});
-return z;
-}
-
-function findCycle(enterKey,basis,rev){
-// Simple cycle finder for this small network
-// Returns array of {key, dir} where dir is '+' or '-'
-var from=enterKey[0],to=enterKey[1];
-// Build adjacency from basis arcs
+function computeDeltaZ(enterKey,basis,c){
+// Find cycle by tracing tree
+var nodes='ABCDE';
 var adj={};
 basis.forEach(function(k){
 var f=k[0],t=k[1];
 if(!adj[f])adj[f]=[];if(!adj[t])adj[t]=[];
-adj[f].push({node:t,key:k,forward:true});
-adj[t].push({node:f,key:k,forward:false});
+adj[f].push({n:t,key:k,fwd:true});
+adj[t].push({n:f,key:k,fwd:false});
 });
-
-// BFS/DFS from 'to' to 'from' using basis arcs
-var visited={};var parent={};var queue=[to];visited[to]=true;
+var from=enterKey[0],to=enterKey[1];
+// BFS from 'to' back to 'from'
+var vis={},par={},q=[to];vis[to]=true;
 var found=false;
-while(queue.length>0){
-var cur=queue.shift();
+while(q.length){
+var cur=q.shift();
 if(cur===from){found=true;break}
-if(!adj[cur])continue;
-adj[cur].forEach(function(e){
-if(!visited[e.node]){visited[e.node]=true;parent[e.node]={from:cur,key:e.key,forward:e.forward};queue.push(e.node)}
-});
+(adj[cur]||[]).forEach(function(e){if(!vis[e.n]){vis[e.n]=true;par[e.n]={from:cur,key:e.key,fwd:e.fwd};q.push(e.n)}});
 }
 if(!found)return null;
-
-// Reconstruct cycle
 var cycle=[{key:enterKey,dir:'+'}];
-var cur=from;
-while(cur!==to){
-var p=parent[cur];
-// Direction relative to entering arc
-if(p.forward){
-cycle.push({key:p.key,dir:'-'}); // opposite direction in cycle
-} else {
-cycle.push({key:p.key,dir:'+'});
+var cur2=from;
+while(cur2!==to){
+var p=par[cur2];
+cycle.push({key:p.key,dir:p.fwd?'-':'+'});
+cur2=p.from;
 }
-cur=p.from;
-}
-return cycle;
-}
-
-function calcDeltaZ(cycle,flows,rev){
-var dz=0;
+var val=0;
 cycle.forEach(function(ce){
-var c=getCostForKey(ce.key,rev);
-if(ce.dir==='+')dz+=c;
-else dz-=c;
+var cost=c[ce.key]||0;
+if(ce.dir==='+')val+=cost;else val-=cost;
 });
-return dz;
+return{val:val,cycle:cycle};
 }
 
-function getCostForKey(key,rev){
-var f=key[0],t=key[1];
-if(costs[key]!==undefined)return costs[key];
-// try reverse
-var rk=t+f;
-if(costs[rk]!==undefined)return costs[rk];
-return 0;
-}
-
-// ============ RESULTS ============
-function buildResults(){
+function buildSolResults(){
 if(!sol)return;
-var f=sol.flows;
-var z=sol.z;
+document.getElementById('solBanner').innerHTML='<div class="wb"><h3>'+ico('trophy','lg')+' Solusi Optimal</h3><p>Total Biaya Minimum: <strong>Rp '+sol.z.toLocaleString('id')+',00</strong> per hari | Rp '+(sol.z*44).toLocaleString('id')+',00 untuk 2 bulan (44 hari kerja)</p></div>';
 
-// Winner banner
-document.getElementById('winnerBanner').innerHTML='<div class="winner-banner"><h3>'+ico('trophy','lg')+' Solusi Optimal Ditemukan</h3><p>Total Biaya Minimum: <strong>Rp '+z.toLocaleString('id')+'</strong> per hari</p></div>';
-
-// Stats
-var totalFlow=0;for(var k in f)totalFlow+=f[k];
-document.getElementById('statsRow').innerHTML=
-'<div class="stat-card winner"><div class="sv">Rp '+z.toLocaleString('id')+'</div><div class="sl">Total Biaya/hari</div></div>'+
+document.getElementById('solStats').innerHTML=
+'<div class="stat-card hi"><div class="sv">Rp '+sol.z.toLocaleString('id')+'</div><div class="sl">Total Biaya/hari</div></div>'+
 '<div class="stat-card"><div class="sv">200</div><div class="sl">Total Porsi</div></div>'+
-'<div class="stat-card"><div class="sv">'+iterStates.length+'</div><div class="sl">Iterasi</div></div>'+
-'<div class="stat-card"><div class="sv">5</div><div class="sl">Nodes</div></div>'+
-'<div class="stat-card"><div class="sv">7</div><div class="sl">Arcs</div></div>';
+'<div class="stat-card"><div class="sv">'+iterStates.length+'</div><div class="sl">Iterasi</div></div>';
 
-// Solution table
-var h='<table class="rt"><tr><th>Jalur</th><th>Dari</th><th>Ke</th><th>Aliran (porsi)</th><th>Biaya/porsi</th><th>Total Biaya</th></tr>';
-ARCS_DEF.forEach(function(arc){
-var key=arc.from+arc.to;
-var flow=f[key]||0;
-var cost=costs[key]||0;
-h+='<tr><td>'+arc.from+'→'+arc.to+'</td><td>'+getLocName(arc.fromN)+'</td><td>'+getLocName(arc.toN)+'</td><td style="font-weight:700;color:'+(flow>0?'var(--green)':'var(--text3)')+'">'+flow+'</td><td>Rp '+cost.toLocaleString('id')+'</td><td>Rp '+(flow*cost).toLocaleString('id')+'</td></tr>';
+var h='<table class="rt"><tr><th>Jalur</th><th>Dari</th><th>Ke</th><th>Aliran</th><th>Biaya/porsi</th><th>Total Biaya</th></tr>';
+ARCS.forEach(function(a){
+var f=sol.flows[a.id]||0;
+h+='<tr><td>'+a.from+'→'+a.to+'</td><td>'+locName(a.from)+'</td><td>'+locName(a.to)+'</td><td style="font-weight:700;color:'+(f>0?'var(--green)':'var(--text3)')+'">'+f+' porsi</td><td>Rp '+costs[a.id].toLocaleString('id')+'</td><td>Rp '+(f*costs[a.id]).toLocaleString('id')+'</td></tr>';
 });
-h+='<tr style="font-weight:700;background:var(--accent-bg)"><td colspan="3">TOTAL</td><td>-</td><td>-</td><td>Rp '+z.toLocaleString('id')+'</td></tr></table>';
-document.getElementById('solTableWrap').innerHTML=h;
-
-// All iterations
-var ah='';
-iterStates.forEach(function(st,i){
-var ch='';st.changes.forEach(function(c){ch+='<div style="font-size:11px;color:var(--text2);margin:2px 0;padding-left:10px;border-left:2px solid var(--border)">'+c+'</div>'});
-ah+='<div style="background:var(--highlight-soft);border:1px solid var(--border);border-radius:var(--radius-sm);padding:12px;margin:6px 0;cursor:pointer" onclick="iterGo('+i+')"><div style="font-weight:700;font-size:12px;margin-bottom:6px">'+(i+1)+'. '+st.title+'</div>'+ch+'</div>';
-});
-document.getElementById('allIterWrap').innerHTML=ah;
-
-// Analysis
-var anh='<h4>'+ico('sparkle')+' Analisis Solusi Optimal</h4>';
-anh+='<p>Dengan menggunakan <strong>Network Simplex Method</strong> dengan teknik <strong>upper bound</strong>, diperoleh solusi optimal sebagai berikut:</p>';
-anh+='<h4>'+ico('route')+' Aliran Optimal</h4>';
-ARCS_DEF.forEach(function(arc){
-var key=arc.from+arc.to;
-var flow=f[key]||0;
-if(flow>0)anh+='<p>'+arc.from+'→'+arc.to+': <strong>'+flow+' porsi</strong> × Rp '+costs[key].toLocaleString('id')+' = Rp '+(flow*costs[key]).toLocaleString('id')+'</p>';
-});
-anh+='<h4>'+ico('coin')+' Total Biaya</h4>';
-anh+='<p><strong>Z* = Rp '+z.toLocaleString('id')+'</strong> per hari</p>';
-anh+='<p>Biaya per bulan (22 hari kerja): <strong>Rp '+(z*22).toLocaleString('id')+'</strong></p>';
-anh+='<p>Biaya 2 bulan: <strong>Rp '+(z*44).toLocaleString('id')+'</strong></p>';
-anh+='<h4>'+ico('check')+' Verifikasi Constraint</h4>';
-anh+='<p>Supply A: '+(f.AB||0)+'+'+(f.AC||0)+'+'+(f.AD||0)+' = '+((f.AB||0)+(f.AC||0)+(f.AD||0))+' = 110 ✓</p>';
-anh+='<p>Supply B: '+(f.BC||0)+' + X<sub>AB</sub> masuk = '+(f.BC||0)+' + '+(f.AB||0)+' ... → cek konservasi aliran ✓</p>';
-anh+='<p>X<sub>AB</sub> = '+(f.AB||0)+' ≤ 20 ✓</p>';
-document.getElementById('analysisBox').innerHTML=anh;
+h+='<tr style="font-weight:700;background:var(--accent-bg)"><td colspan="3">TOTAL</td><td></td><td></td><td>Rp '+sol.z.toLocaleString('id')+'</td></tr></table>';
+document.getElementById('solTable').innerHTML=h;
 }
 
-// ============ ITERATION CONTROLS ============
-function setupIterCtrl(){document.getElementById('iterCtrl').style.display=iterStates.length?'flex':'none';document.getElementById('playCtrl').style.display=iterStates.length?'flex':'none'}
-function iterGo(idx){if(idx<0)idx=0;if(idx>=iterStates.length)idx=iterStates.length-1;curIter=idx;var st=iterStates[idx];drawGraph(st.hlArcs||[],st.bloomArcs||[]);updateIterUI();showIterChanges();showIterDetail()}
+/* ===== ITERATION CONTROLS ===== */
+function setupIterCtrl(){document.getElementById('iterCtrl').style.display='flex';document.getElementById('playBtn').parentElement.style.display='flex'}
+function iterGo(i){if(i<0)i=0;if(i>=iterStates.length)i=iterStates.length-1;curIter=i;updateIterUI();showIterInfo();if(pos.length)drawGraph()}
 function updateIterUI(){document.getElementById('iterBadge').textContent=(curIter+1)+'/'+iterStates.length;document.getElementById('iterFirst').disabled=!curIter;document.getElementById('iterPrev').disabled=!curIter;document.getElementById('iterNext').disabled=curIter>=iterStates.length-1;document.getElementById('iterLast').disabled=curIter>=iterStates.length-1}
-function showIterChanges(){var st=iterStates[curIter],el=document.getElementById('iterChanges');el.innerHTML='';st.changes.forEach(function(c){el.innerHTML+='<li>'+c+'</li>'})}
-function showIterDetail(){var st=iterStates[curIter],el=document.getElementById('iterDetail');el.className='iter-detail show';el.innerHTML='<div style="font-weight:700;margin-bottom:6px">'+st.title+'</div><div style="font-size:11px;color:var(--text3);margin-bottom:8px">'+st.desc+'</div>';if(st.flows){var fh='<div style="display:flex;flex-wrap:wrap;gap:6px">';for(var k in st.flows){fh+='<span class="badge '+(st.flows[k]>0?'badge-g':'badge-b')+'">X<sub>'+k+'</sub>='+st.flows[k]+'</span>'}fh+='</div>';el.innerHTML+=fh}}
-function togglePlayback(){if(playInterval){stopPlayback()}else{document.getElementById('playBtn').textContent='Stop';playInterval=setInterval(function(){if(curIter>=iterStates.length-1){stopPlayback();return}iterGo(curIter+1)},playSpeed)}}
-function stopPlayback(){if(playInterval){clearInterval(playInterval);playInterval=null}document.getElementById('playBtn').textContent='Play'}
+function showIterInfo(){var st=iterStates[curIter];var el=document.getElementById('iterDetail');el.innerHTML='<div style="font-weight:700;margin-bottom:6px">'+st.title+'</div><div style="font-size:11px;color:var(--text3);margin-bottom:8px">'+st.desc+'</div>';
+if(st.flows){var fh='<div style="display:flex;flex-wrap:wrap;gap:6px;margin-bottom:8px">';for(var k in st.flows)fh+='<span class="badge '+(st.flows[k]>0?'badge-g':'badge-b')+'">X<sub>'+k+'</sub>='+st.flows[k]+'</span>';fh+='</div>';el.innerHTML+=fh}
+var cl=document.getElementById('iterChanges');cl.innerHTML='';st.changes.forEach(function(c){cl.innerHTML+='<li>'+c+'</li>'})}
+function togglePlay(){if(playInt){clearInterval(playInt);playInt=null;document.getElementById('playBtn').textContent='Play'}else{document.getElementById('playBtn').textContent='Stop';playInt=setInterval(function(){if(curIter>=iterStates.length-1){clearInterval(playInt);playInt=null;document.getElementById('playBtn').textContent='Play';return}iterGo(curIter+1)},playSpd)}}
 
-// ============ GRAPH ENGINE ============
+/* ===== CANVAS GRAPH ===== */
 function initCanvas(){cvEl=document.getElementById('cv');ctx=cvEl.getContext('2d');cvEl.addEventListener('mousedown',onMD);cvEl.addEventListener('mousemove',onMM);cvEl.addEventListener('mouseup',onMU);cvEl.addEventListener('mouseleave',onMU);cvEl.addEventListener('touchstart',onTD,{passive:false});cvEl.addEventListener('touchmove',onTM,{passive:false});cvEl.addEventListener('touchend',onMU)}
-function cPos(e){var r=cvEl.getBoundingClientRect();return{x:(e.clientX-r.left)/sc,y:(e.clientY-r.top)/sc}}
-function onMD(e){var p=cPos(e);for(var i=pos.length-1;i>=0;i--){var dx=p.x-pos[i].x,dy=p.y-pos[i].y;if(dx*dx+dy*dy<800){di=i;dOff={x:dx,y:dy};cvEl.style.cursor='grabbing';return}}}
-function onMM(e){if(di<0)return;var p=cPos(e);pos[di]={x:p.x-dOff.x,y:p.y-dOff.y};drawGraph(iterStates[curIter]?iterStates[curIter].hlArcs:[],iterStates[curIter]?iterStates[curIter].bloomArcs:[])}
+function cP(e){var r=cvEl.getBoundingClientRect();return{x:(e.clientX-r.left)/sc,y:(e.clientY-r.top)/sc}}
+function onMD(e){var p=cP(e);for(var i=pos.length-1;i>=0;i--){var dx=p.x-pos[i].x,dy=p.y-pos[i].y;if(dx*dx+dy*dy<900){di=i;dOff={x:dx,y:dy};cvEl.style.cursor='grabbing';return}}}
+function onMM(e){if(di<0)return;var p=cP(e);pos[di]={x:p.x-dOff.x,y:p.y-dOff.y};drawGraph()}
 function onMU(){di=-1;cvEl.style.cursor='grab'}
-function onTD(e){e.preventDefault();var t=e.touches[0],r=cvEl.getBoundingClientRect(),p={x:(t.clientX-r.left)/sc,y:(t.clientY-r.top)/sc};for(var i=pos.length-1;i>=0;i--){var dx=p.x-pos[i].x,dy=p.y-pos[i].y;if(dx*dx+dy*dy<800){di=i;dOff={x:dx,y:dy};return}}}
-function onTM(e){if(di<0)return;e.preventDefault();var t=e.touches[0],r=cvEl.getBoundingClientRect(),p={x:(t.clientX-r.left)/sc,y:(t.clientY-r.top)/sc};pos[di]={x:p.x-dOff.x,y:p.y-dOff.y};drawGraph(iterStates[curIter]?iterStates[curIter].hlArcs:[],iterStates[curIter]?iterStates[curIter].bloomArcs:[])}
-function zoomIn(){sc=Math.min(sc*1.2,3);drawGraph(iterStates[curIter]?iterStates[curIter].hlArcs:[],iterStates[curIter]?iterStates[curIter].bloomArcs:[])}
-function zoomOut(){sc=Math.max(sc/1.2,.3);drawGraph(iterStates[curIter]?iterStates[curIter].hlArcs:[],iterStates[curIter]?iterStates[curIter].bloomArcs:[])}
-function zoomReset(){sc=1;drawGraph(iterStates[curIter]?iterStates[curIter].hlArcs:[],iterStates[curIter]?iterStates[curIter].bloomArcs:[])}
-function setLayout(t,btn){cLo=t;document.querySelectorAll('.layout-btns button').forEach(function(b){b.classList.remove('on')});if(btn)btn.classList.add('on');applyLayout();drawGraph(iterStates[curIter]?iterStates[curIter].hlArcs:[],iterStates[curIter]?iterStates[curIter].bloomArcs:[])}
-function applyLayout(){var W=800,H=500,n=5,pad=70;if(cLo==='circle'){var cx=W/2,cy=H/2,r=Math.min(W,H)*.32;for(var i=0;i<n;i++){var a=2*Math.PI*i/n-Math.PI/2;pos[i]={x:cx+r*Math.cos(a),y:cy+r*Math.sin(a)}}}else if(cLo==='custom'){pos=[{x:150,y:100},{x:150,y:400},{x:400,y:250},{x:650,y:100},{x:650,y:400}]}else if(cLo==='force'){for(var i=0;i<n;i++)pos[i]={x:pad+Math.random()*(W-2*pad),y:pad+Math.random()*(H-2*pad)};for(var it=0;it<200;it++){var fx=Array(n).fill(0),fy=Array(n).fill(0);for(var i=0;i<n;i++)for(var j=i+1;j<n;j++){var dx=pos[i].x-pos[j].x,dy=pos[i].y-pos[j].y,d=Math.max(Math.sqrt(dx*dx+dy*dy),1),f=5000/(d*d);fx[i]+=f*dx/d;fy[i]+=f*dy/d;fx[j]-=f*dx/d;fy[j]-=f*dy/d}var tmp=1-it/200;for(var i=0;i<n;i++){pos[i].x+=fx[i]*.9*tmp;pos[i].y+=fy[i]*.9*tmp;pos[i].x=Math.max(pad,Math.min(W-pad,pos[i].x));pos[i].y=Math.max(pad,Math.min(H-pad,pos[i].y))}}}}
-function updateLegend(){var el=document.getElementById('graphLegend');el.style.display='flex';el.innerHTML='<span style="font-weight:700;font-size:9px;text-transform:uppercase;letter-spacing:1px">Legend:</span><span class="graph-legend-item"><span style="width:8px;height:8px;border-radius:50%;background:var(--green);display:inline-block"></span> Supply</span><span class="graph-legend-item"><span style="width:8px;height:8px;border-radius:50%;background:var(--red);display:inline-block"></span> Demand</span><span class="graph-legend-item"><span style="width:8px;height:8px;border-radius:50%;background:var(--amber);display:inline-block"></span> Transit</span>'}
+function onTD(e){e.preventDefault();var t=e.touches[0],r=cvEl.getBoundingClientRect(),p={x:(t.clientX-r.left)/sc,y:(t.clientY-r.top)/sc};for(var i=pos.length-1;i>=0;i--){var dx=p.x-pos[i].x,dy=p.y-pos[i].y;if(dx*dx+dy*dy<900){di=i;dOff={x:dx,y:dy};return}}}
+function onTM(e){if(di<0)return;e.preventDefault();var t=e.touches[0],r=cvEl.getBoundingClientRect(),p={x:(t.clientX-r.left)/sc,y:(t.clientY-r.top)/sc};pos[di]={x:p.x-dOff.x,y:p.y-dOff.y};drawGraph()}
+function zoomIn(){sc=Math.min(sc*1.2,3);drawGraph()}
+function zoomOut(){sc=Math.max(sc/1.2,.3);drawGraph()}
+function zoomReset(){sc=1;drawGraph()}
+function setLayout(t,btn){cLo=t;document.querySelectorAll('.layout-btns button').forEach(function(b){b.classList.remove('on')});if(btn)btn.classList.add('on');applyLayout();drawGraph()}
+function applyLayout(){var W=800,H=520,pad=80;if(cLo==='mcf'){pos=[{x:140,y:90},{x:140,y:430},{x:400,y:260},{x:660,y:90},{x:660,y:430}]}else if(cLo==='circle'){var cx=W/2,cy=H/2,r=Math.min(W,H)*.33;for(var i=0;i<5;i++){var a=2*Math.PI*i/5-Math.PI/2;pos[i]={x:cx+r*Math.cos(a),y:cy+r*Math.sin(a)}}}else{for(var i=0;i<5;i++)pos[i]={x:pad+Math.random()*(W-2*pad),y:pad+Math.random()*(H-2*pad)}}}
+function updateLegend(){document.getElementById('gLegend').style.display='flex';document.getElementById('gLegend').innerHTML='<span style="font-weight:700;font-size:9px;text-transform:uppercase;letter-spacing:1px">Legend:</span><span class="g-legend-item"><span class="g-legend-dot" style="background:var(--green)"></span> Supply Node</span><span class="g-legend-item"><span class="g-legend-dot" style="background:var(--amber)"></span> Transit Node</span><span class="g-legend-item"><span class="g-legend-dot" style="background:var(--red)"></span> Demand Node</span><span class="g-legend-item">→ Directed Arc</span>'}
 
-function drawArrowHead(cx2,x1,y1,x2,y2,size,color){var dx=x2-x1,dy=y2-y1,len=Math.sqrt(dx*dx+dy*dy);if(len<1)return;var ux=dx/len,uy=dy/len;var tipX=x2-ux*NODE_R,tipY=y2-uy*NODE_R;var baseX=tipX-ux*size,baseY=tipY-uy*size;var px=-uy,py=ux;cx2.beginPath();cx2.moveTo(tipX,tipY);cx2.lineTo(baseX+px*size*.45,baseY+py*size*.45);cx2.lineTo(baseX-px*size*.45,baseY-py*size*.45);cx2.closePath();cx2.fillStyle=color;cx2.fill()}
-
-function drawCurvedArrow(cx2,x1,y1,x2,y2,curve,color,lw,dashed,arrowSize){var mx=(x1+x2)/2,my=(y1+y2)/2;var dx=x2-x1,dy=y2-y1,len=Math.sqrt(dx*dx+dy*dy);if(len<1)return;var nx=-dy/len,ny=dx/len;var cpx=mx+nx*curve,cpy=my+ny*curve;cx2.save();cx2.beginPath();cx2.moveTo(x1,y1);cx2.quadraticCurveTo(cpx,cpy,x2,y2);cx2.strokeStyle=color;cx2.lineWidth=lw;if(dashed)cx2.setLineDash([6,4]);else cx2.setLineDash([]);cx2.stroke();cx2.setLineDash([]);cx2.restore();var t2=1-NODE_R/len;var tanX=2*(1-t2)*(cpx-x1)+2*t2*(x2-cpx);var tanY=2*(1-t2)*(cpy-y1)+2*t2*(y2-cpy);var tanLen=Math.sqrt(tanX*tanX+tanY*tanY)||1;var ex=x1*(1-t2)*(1-t2)+2*cpx*t2*(1-t2)+x2*t2*t2;var ey=y1*(1-t2)*(1-t2)+2*cpy*t2*(1-t2)+y2*t2*t2;var ux=tanX/tanLen,uy=tanY/tanLen;var bx=ex-ux*arrowSize,by=ey-uy*arrowSize;var ppx=-uy,ppy=ux;cx2.beginPath();cx2.moveTo(ex,ey);cx2.lineTo(bx+ppx*arrowSize*.45,by+ppy*arrowSize*.45);cx2.lineTo(bx-ppx*arrowSize*.45,by-ppy*arrowSize*.45);cx2.closePath();cx2.fillStyle=color;cx2.fill();return{x:cpx*.5+mx*.5,y:cpy*.5+my*.5}}
-
-function drawGraph(hlArcs,bloomArcs){
+function drawGraph(){
 if(!cvEl||pos.length<5)return;
-hlArcs=hlArcs||[];bloomArcs=bloomArcs||[];
-var dpr=window.devicePixelRatio||1;
-var W=cvEl.parentElement.clientWidth,H=500;
-cvEl.style.width=W+'px';cvEl.style.height=H+'px';
-cvEl.width=W*dpr;cvEl.height=H*dpr;
+var dpr=window.devicePixelRatio||1;var W=cvEl.parentElement.clientWidth,H=520;
+cvEl.style.width=W+'px';cvEl.style.height=H+'px';cvEl.width=W*dpr;cvEl.height=H*dpr;
 ctx.setTransform(dpr*sc,0,0,dpr*sc,0,0);
 var cs=getComputedStyle(document.documentElement);
-var cBg=cs.getPropertyValue('--canvas-bg').trim()||'#fafafa';
-var nF=cs.getPropertyValue('--node-fill').trim()||'#fff';
-var nS=cs.getPropertyValue('--node-stroke').trim()||'#333';
-var eC=cs.getPropertyValue('--edge-color').trim()||'#bbb';
-var tC=cs.getPropertyValue('--text').trim()||'#1a1a1a';
-var t2=cs.getPropertyValue('--text2').trim()||'#4a4a4a';
-var t3=cs.getPropertyValue('--text3').trim()||'#888';
-var greenC=cs.getPropertyValue('--green').trim()||'#2e7d32';
-var redC=cs.getPropertyValue('--red').trim()||'#c62828';
-var amberC=cs.getPropertyValue('--amber').trim()||'#f57f17';
-
+var cBg=cs.getPropertyValue('--canvas-bg').trim();
+var nF=cs.getPropertyValue('--node-fill').trim();
+var nS=cs.getPropertyValue('--node-stroke').trim();
+var eC=cs.getPropertyValue('--edge-color').trim();
+var tC=cs.getPropertyValue('--text').trim();
+var t2=cs.getPropertyValue('--text2').trim();
+var t3=cs.getPropertyValue('--text3').trim();
+var gC=cs.getPropertyValue('--green').trim();
+var rC=cs.getPropertyValue('--red').trim();
+var aC=cs.getPropertyValue('--amber').trim();
+var bC=cs.getPropertyValue('--blue').trim();
 ctx.fillStyle=cBg;ctx.fillRect(0,0,W/sc,H/sc);
 
-// Node colors
-var nodeColors=['A','B'].map(function(){return greenC}).concat([amberC,redC,redC]);
-var nodeLabels=['A','B','C','D','E'];
-var names=[locA||'Dapur A',locB||'Dapur B',LOC_C,locD||'Kantor D',locE||'Kantor E'];
-var bValues=[110,90,0,-80,-120];
+var nodeC=[gC,gC,aC,rC,rC];
+var nodeL=['A','B','C','D','E'];
+var nodeN=[locA,locB,LOC_C.split(',')[0],locD,locE];
+var bVals=[110,90,0,-80,-120];
+var curFlows=iterStates[curIter]?iterStates[curIter].flows:null;
+var curBasisSet=iterStates[curIter]?iterStates[curIter].basis:null;
 
 // Draw arcs
-var arcDefs=[{f:0,t:1},{f:0,t:2},{f:0,t:3},{f:1,t:2},{f:2,t:4},{f:3,t:4},{f:4,t:3}];
-var currentFlows=iterStates[curIter]?iterStates[curIter].flows:{};
+var arcDraw=[{f:0,t:1,id:'AB'},{f:0,t:2,id:'AC'},{f:0,t:3,id:'AD'},{f:1,t:2,id:'BC'},{f:2,t:4,id:'CE'},{f:3,t:4,id:'DE'},{f:4,t:3,id:'ED'}];
 
-arcDefs.forEach(function(ad){
-var ax=pos[ad.f].x,ay=pos[ad.f].y,bx=pos[ad.t].x,by=pos[ad.t].y;
-var isHl=hlArcs.some(function(h){return h.from===ad.f&&h.to===ad.t});
-var isBl=bloomArcs.some(function(h){return h.from===ad.f&&h.to===ad.t});
-var color=isBl?tC:isHl?tC:eC;
-var lw=isBl?3:isHl?2:1;
-var dashed=!isHl&&!isBl;
-var arrowSz=isBl?10:isHl?9:7;
-// Check if DE and ED share same nodes
-var needsCurve=(ad.f===3&&ad.t===4)||(ad.f===4&&ad.t===3);
-var curveAmt=0;
-if(needsCurve)curveAmt=(ad.f<ad.t)?30:-30;
+arcDraw.forEach(function(ad){
+var x1=pos[ad.f].x,y1=pos[ad.f].y,x2=pos[ad.t].x,y2=pos[ad.t].y;
+var isBasis=curBasisSet&&curBasisSet.indexOf(ad.id)>=0;
+var flow=curFlows?curFlows[ad.id]||0:0;
+var color=isBasis?tC:eC;
+var lw=isBasis?(flow>0?2.5:2):1;
+var dashed=!isBasis;
 
-if(isBl){ctx.save();ctx.shadowColor=tC;ctx.shadowBlur=12;
-if(curveAmt)drawCurvedArrow(ctx,ax,ay,bx,by,curveAmt,tC,lw+1,false,arrowSz);
-else{var dx2=bx-ax,dy2=by-ay,len2=Math.sqrt(dx2*dx2+dy2*dy2);if(len2>1){var ux=dx2/len2,uy=dy2/len2;ctx.beginPath();ctx.moveTo(ax+ux*NODE_R,ay+uy*NODE_R);ctx.lineTo(bx-ux*NODE_R,by-uy*NODE_R);ctx.strokeStyle=tC;ctx.lineWidth=lw+1;ctx.stroke()}drawArrowHead(ctx,ax,ay,bx,by,arrowSz,tC)}
-ctx.restore();}
+// DE and ED share nodes - curve them
+var needCurve=(ad.id==='DE'||ad.id==='ED');
+var curve=0;
+if(ad.id==='DE')curve=35;
+if(ad.id==='ED')curve=-35;
+
+var dx=x2-x1,dy=y2-y1,len=Math.sqrt(dx*dx+dy*dy)||1;
+var ux=dx/len,uy=dy/len;
+
+if(isBasis&&flow>0){ctx.save();ctx.shadowColor=bC;ctx.shadowBlur=10}
 
 var labelPt;
-if(curveAmt){labelPt=drawCurvedArrow(ctx,ax,ay,bx,by,curveAmt,color,lw,dashed,arrowSz)}
-else{var dx2=bx-ax,dy2=by-ay,len2=Math.sqrt(dx2*dx2+dy2*dy2);if(len2>1){var ux=dx2/len2,uy=dy2/len2;ctx.save();ctx.beginPath();ctx.moveTo(ax+ux*NODE_R,ay+uy*NODE_R);ctx.lineTo(bx-ux*NODE_R,by-uy*NODE_R);ctx.strokeStyle=color;ctx.lineWidth=lw;if(dashed)ctx.setLineDash([6,4]);ctx.stroke();ctx.setLineDash([]);ctx.restore();drawArrowHead(ctx,ax,ay,bx,by,arrowSz,color);labelPt={x:(ax+bx)/2,y:(ay+by)/2}}}
+if(curve){
+var mx=(x1+x2)/2,my=(y1+y2)/2;
+var nx=-dy/len,ny=dx/len;
+var cpx=mx+nx*curve,cpy=my+ny*curve;
+ctx.save();ctx.beginPath();ctx.moveTo(x1,y1);ctx.quadraticCurveTo(cpx,cpy,x2,y2);ctx.strokeStyle=color;ctx.lineWidth=lw;if(dashed)ctx.setLineDash([6,4]);ctx.stroke();ctx.setLineDash([]);ctx.restore();
+// Arrow
+var t2v=1-NODE_R/len;
+var tanX=2*(1-t2v)*(cpx-x1)+2*t2v*(x2-cpx);
+var tanY=2*(1-t2v)*(cpy-y1)+2*t2v*(y2-cpy);
+var tl=Math.sqrt(tanX*tanX+tanY*tanY)||1;
+var ex=x1*(1-t2v)*(1-t2v)+2*cpx*t2v*(1-t2v)+x2*t2v*t2v;
+var ey=y1*(1-t2v)*(1-t2v)+2*cpy*t2v*(1-t2v)+y2*t2v*t2v;
+drawAH(ctx,ex,ey,tanX/tl,tanY/tl,isBasis?9:7,color);
+labelPt={x:cpx*.5+mx*.5,y:cpy*.5+my*.5};
+}else{
+var sx=x1+ux*NODE_R,sy=y1+uy*NODE_R;
+var ex2=x2-ux*NODE_R,ey2=y2-uy*NODE_R;
+ctx.save();ctx.beginPath();ctx.moveTo(sx,sy);ctx.lineTo(ex2,ey2);ctx.strokeStyle=color;ctx.lineWidth=lw;if(dashed)ctx.setLineDash([6,4]);ctx.stroke();ctx.setLineDash([]);ctx.restore();
+drawAH(ctx,x2-ux*NODE_R,y2-uy*NODE_R,ux,uy,isBasis?9:7,color);
+labelPt={x:(x1+x2)/2,y:(y1+y2)/2};
+}
 
-// Edge label
-if(labelPt){
-var key=nodeLabels[ad.f]+nodeLabels[ad.t];
-var c=costs[key];var fl=currentFlows[key]||0;
-var txt=c?('Rp'+c):'';
-if(fl>0)txt=fl+'p | '+txt;
-if(txt){
-ctx.font='600 8px JetBrains Mono,monospace';
-ctx.textAlign='center';ctx.textBaseline='middle';
+if(isBasis&&flow>0)ctx.restore();
+
+// Label
+if(labelPt&&costs[ad.id]){
+var perp={x:-uy*16,y:ux*16};if(curve)perp={x:0,y:0};
+var lx=labelPt.x+perp.x,ly=labelPt.y+perp.y;
+var txt='c='+costs[ad.id];
+if(curFlows&&flow>0)txt=flow+'p | c='+costs[ad.id];
+ctx.font='600 8px JetBrains Mono,monospace';ctx.textAlign='center';ctx.textBaseline='middle';
 var tw=ctx.measureText(txt).width;
-var dx3=bx-ax,dy3=by-ay,len3=Math.sqrt(dx3*dx3+dy3*dy3)||1;
-var offx=(-dy3/len3)*16,offy=(dx3/len3)*16;
-if(curveAmt){offx=0;offy=0}
-ctx.fillStyle=cBg;ctx.fillRect(labelPt.x+offx-tw/2-3,labelPt.y+offy-7,tw+6,14);
-ctx.strokeStyle=isHl||isBl?tC:eC;ctx.lineWidth=.5;ctx.strokeRect(labelPt.x+offx-tw/2-3,labelPt.y+offy-7,tw+6,14);
-ctx.fillStyle=isHl||isBl?tC:t2;ctx.fillText(txt,labelPt.x+offx,labelPt.y+offy);
-}
-// Capacity label for AB
-if(key==='AB'){
-ctx.font='500 7px JetBrains Mono,monospace';
-ctx.fillStyle=amberC;
-ctx.fillText('cap:20',labelPt.x+offx,labelPt.y+offy+12);
-}
+ctx.fillStyle=cBg;ctx.fillRect(lx-tw/2-3,ly-7,tw+6,14);
+ctx.strokeStyle=isBasis?tC:eC;ctx.lineWidth=.5;ctx.strokeRect(lx-tw/2-3,ly-7,tw+6,14);
+ctx.fillStyle=isBasis?tC:t2;ctx.fillText(txt,lx,ly);
+// Cap label
+if(ad.id==='AB'){ctx.font='500 7px JetBrains Mono';ctx.fillStyle=aC;ctx.fillText('U=20',lx,ly+12)}
 }
 });
 
-// Draw nodes
+// Nodes
 for(var i=0;i<5;i++){
 if(!pos[i])continue;
 var x=pos[i].x,y=pos[i].y;
-var isHl=hlArcs.some(function(h){return h.from===i||h.to===i});
-var isBl=bloomArcs.some(function(h){return h.from===i||h.to===i});
-if(isBl){ctx.save();ctx.shadowColor=tC;ctx.shadowBlur=16;ctx.beginPath();ctx.arc(x,y,NODE_R+6,0,Math.PI*2);ctx.strokeStyle=tC;ctx.lineWidth=2;ctx.stroke();ctx.restore()}
-ctx.beginPath();ctx.arc(x,y,NODE_R,0,Math.PI*2);
-ctx.fillStyle=isBl?nodeColors[i]:nF;ctx.fill();
-ctx.strokeStyle=nodeColors[i];ctx.lineWidth=isBl?3:2;ctx.stroke();
-ctx.font='700 13px JetBrains Mono,monospace';ctx.textAlign='center';ctx.textBaseline='middle';
-ctx.fillStyle=isBl?'#fff':tC;ctx.fillText(nodeLabels[i],x,y);
-// Name below
+ctx.beginPath();ctx.arc(x,y,NODE_R,0,Math.PI*2);ctx.fillStyle=nF;ctx.fill();
+ctx.strokeStyle=nodeC[i];ctx.lineWidth=2.5;ctx.stroke();
+ctx.font='700 14px JetBrains Mono,monospace';ctx.textAlign='center';ctx.textBaseline='middle';ctx.fillStyle=tC;ctx.fillText(nodeL[i],x,y);
 ctx.font='500 8px DM Sans,sans-serif';ctx.fillStyle=t2;
-var nm=names[i];if(nm&&nm.length>18)nm=nm.substring(0,16)+'..';
-if(nm)ctx.fillText(nm,x,y+NODE_R+12);
-// bi value
-ctx.font='600 9px JetBrains Mono,monospace';
-ctx.fillStyle=bValues[i]>0?greenC:bValues[i]<0?redC:amberC;
-ctx.fillText('['+bValues[i]+']',x,y-NODE_R-10);
+var nm=nodeN[i];if(nm&&nm.length>20)nm=nm.substring(0,18)+'..';
+ctx.fillText(nm||'',x,y+NODE_R+13);
+ctx.font='600 9px JetBrains Mono';ctx.fillStyle=nodeC[i];
+ctx.fillText('['+bVals[i]+']',x,y-NODE_R-10);
+}
+// WM
+ctx.font='500 9px JetBrains Mono';ctx.fillStyle=isDark?'rgba(255,255,255,.04)':'rgba(0,0,0,.04)';ctx.textAlign='right';ctx.fillText('RADSTRIX',W/sc-10,H/sc-8);
 }
 
-// Watermark
-ctx.font='500 9px JetBrains Mono,monospace';
-ctx.fillStyle=isDark?'rgba(255,255,255,.04)':'rgba(0,0,0,.04)';
-ctx.textAlign='right';ctx.fillText('RADSTRIX',W/sc-10,H/sc-8);
+function drawAH(cx2,tipX,tipY,ux,uy,sz,col){
+var bx=tipX-ux*sz,by=tipY-uy*sz;
+var px=-uy,py=ux;
+cx2.beginPath();cx2.moveTo(tipX,tipY);cx2.lineTo(bx+px*sz*.4,by+py*sz*.4);cx2.lineTo(bx-px*sz*.4,by-py*sz*.4);cx2.closePath();cx2.fillStyle=col;cx2.fill();
 }
 
-// ============ UTILITIES ============
+/* ===== UTILS ===== */
 function resetAll(){
-sol=null;curIter=0;iterStates=[];stopPlayback();
+sol=null;curIter=0;iterStates=[];if(playInt)clearInterval(playInt);playInt=null;
 ['inpNIM','inpNama','inpKelas'].forEach(function(id){document.getElementById(id).value=''});
-['nimResult','secCost','secModel','secIter','secResults'].forEach(function(id){
-var el=document.getElementById(id);if(el)el.style.display='none';
-});
-toast('Reset complete','info');
+['nimResult','sec2','sec3','sec4','sec5'].forEach(function(id){document.getElementById(id).style.display='none'});
+costs={};dists={};toast('Reset selesai','info');
 }
-function exportJSON(){
-var data={nama:document.getElementById('inpNama').value,nim:document.getElementById('inpNIM').value,kelas:document.getElementById('inpKelas').value,costs:costs,solution:sol};
-var b=new Blob([JSON.stringify(data,null,2)],{type:'application/json'});
-var a=document.createElement('a');a.href=URL.createObjectURL(b);a.download='mcf-'+Date.now()+'.json';a.click();
-toast('Exported','success');
-}
+function exportPDF(){toast('Gunakan Print → Save as PDF','info');window.print()}
 
-// Keyboard shortcuts
+// Keyboard
 document.addEventListener('keydown',function(e){
-if(e.target.tagName==='INPUT'||e.target.tagName==='SELECT')return;
+if(e.target.tagName==='INPUT'||e.target.tagName==='SELECT'||e.target.tagName==='TEXTAREA')return;
 if(e.key==='ArrowRight')iterGo(curIter+1);
 else if(e.key==='ArrowLeft')iterGo(curIter-1);
 else if(e.key==='Home')iterGo(0);
 else if(e.key==='End')iterGo(iterStates.length-1);
-else if(e.key===' '){e.preventDefault();togglePlayback()}
+else if(e.key===' '){e.preventDefault();togglePlay()}
 else if(e.key==='d'||e.key==='D')toggleDark();
 });
 </script>
